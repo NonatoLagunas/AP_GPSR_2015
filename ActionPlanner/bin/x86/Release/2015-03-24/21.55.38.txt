@@ -1,0 +1,9 @@
+
+
+24/03/2015 09:55:38 p. m.
+HAL9000.-> State reached InitialState
+HAL9000.-> State reached Navigate
+HAL9000cmdman: Can't send command
+HAL9000cmdman: Can't send command
+HAL9000cmdman: Can't send command
+HAL9000.-> Test Finished

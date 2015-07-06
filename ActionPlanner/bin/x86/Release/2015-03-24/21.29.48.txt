@@ -1,0 +1,5 @@
+
+
+24/03/2015 09:29:48 p. m.
+HAL9000.-> State reached InitialState
+HAL9000.-> State reached Navigate

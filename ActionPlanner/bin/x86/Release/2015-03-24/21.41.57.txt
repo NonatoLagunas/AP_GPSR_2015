@@ -1,0 +1,5 @@
+
+
+24/03/2015 09:41:57 p. m.
+HAL9000.-> Initializing Audio test.
+HAL9000.-> Audio SM execution finished.

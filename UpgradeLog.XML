@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ActionPlanner">
+</Property><Property Name="Solution File" Value="C:\Users\haime\biorobotica\ActionPlanner\ActionPlanner.sln">
+</Property><Property Name="User Options File" Value="C:\Users\haime\biorobotica\ActionPlanner\ActionPlanner.suo">
+</Property><Property Name="Date" Value="viernes, 15 de febrero de 2013">
+</Property><Property Name="Time" Value="13:12 p.m.">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ActionPlanner.sln" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner.sln">
+</Event><Event ErrorLevel="0" Project="" Source="ActionPlanner.suo" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner.suo">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\ActionPlanner.csproj" Description="Project file successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\ActionPlanner.csproj">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\ActionPlanner.csproj.user" Description="Project user file successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\ActionPlanner.csproj.user">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\CmdRecognized.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\CmdRecognized.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\CmdStartTest.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\CmdStartTest.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Gesture.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Gesture.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\HAL9000CmdMan.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\HAL9000CmdMan.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\HAL9000Status.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\HAL9000Status.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\HAL9000StatusArgs.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\HAL9000StatusArgs.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\HomogeneousM.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\HomogeneousM.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\JustinaCmdAndResp.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\JustinaCmdAndResp.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\MapLocation.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\MapLocation.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\MapRoom.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\MapRoom.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Person.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Person.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\SentenceBuilder.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\SentenceBuilder.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\SentenceDeclarative.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\SentenceDeclarative.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\SentenceImperative.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\SentenceImperative.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Form1.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Form1.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Form1.Designer.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\HAL9000Brain.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\HAL9000Brain.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\NaturalLanguageProcessor.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\NaturalLanguageProcessor.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\PhysicalObject.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\PhysicalObject.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Program.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Program.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\SentenceInterrogative.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\SentenceInterrogative.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\SentenceSubordinate.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\SentenceSubordinate.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\World.cs" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\World.cs">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Properties\Settings.settings" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\SaveIcon.png" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\SaveIcon.png">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\HAL9000ico.ico" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\HAL9000ico.ico">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Form1.resx" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Form1.resx">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\Properties\Resources.resx" Description="File successfully backed up as C:\Users\haime\biorobotica\ActionPlanner\Backup\ActionPlanner\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\ActionPlanner.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ActionPlanner" Source="ActionPlanner\ActionPlanner.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ActionPlanner.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ActionPlanner.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ActionPlanner" Source="ActionPlanner\ActionPlanner.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

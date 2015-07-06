@@ -1,0 +1,16 @@
+
+
+20/04/2015 12:51:52 p. m.
+HAL9000.-> Initializing Restaurant test.
+HAL9000.-> FollowHuman state reached.
+HAL9000.-> Not connected to BB
+HAL9000.-> No suscribed to gesture variable
+HAL9000.-> No suscribed to location variable
+HAL9000.-> No suscribed to region variable
+HAL9000.-> No suscribed to room variable
+HAL9000.-> No suscribed to reco speech variable
+HAL9000.-> SYSTEM NOT READY
+HAL9000cmdman: Can't send command
+HAL9000cmdman: Can't send command
+!! SpGen TimeOut !!250[ms] , textToSay:[ Ok, lets go. ]
+HAL9000.-> Waiting for location command

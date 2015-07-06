@@ -1,0 +1,12 @@
+
+
+4/24/2015 7:57:24 AM
+HAL9000.-> Client Connected
+CmdRecognized: Received but no enqueued: recognized "robot no" @0
+HAL9000.-> Not connected to BB
+HAL9000.-> No suscribed to gesture variable
+HAL9000.-> No suscribed to location variable
+HAL9000.-> No suscribed to region variable
+HAL9000.-> No suscribed to room variable
+HAL9000.-> No suscribed to reco speech variable
+HAL9000.-> SYSTEM NOT READY

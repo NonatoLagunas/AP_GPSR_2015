@@ -1,0 +1,32 @@
+
+
+24/03/2015 09:46:02 p. m.
+HAL9000.-> Not connected to BB
+HAL9000.-> No suscribed to gesture variable
+HAL9000.-> No suscribed to location variable
+HAL9000.-> No suscribed to region variable
+HAL9000.-> No suscribed to room variable
+HAL9000.-> No suscribed to reco speech variable
+HAL9000.-> SYSTEM NOT READY
+HAL9000.-> Initializing GPSR test.
+HAL9000.-> GPSR SM execution finished.
+HAL9000.-> Initializing Manipulation and Object Recognition test.
+HAL9000.-> Manipulation and Object Recognition SM execution finished.
+HAL9000.-> Initializing Navigation test.
+HAL9000.-> Navigation Test SM execution finished.
+HAL9000.-> Initializing Person Recognition Test.
+HAL9000.-> Person Recognition Test SM execution finished.
+HAL9000.-> Initializing RoboZoo test.
+HAL9000.-> RoboZoo SM execution finished.
+HAL9000.-> Initializing Audio test.
+HAL9000.-> Audio SM execution finished.
+HAL9000.-> Initializing Open Challenge test.
+HAL9000.-> Open Challenge SM execution finished.
+HAL9000.-> Initializing Open Challenge test.
+HAL9000.-> Open Challenge SM execution finished.
+HAL9000.-> Initializing Open Challenge test.
+HAL9000.-> Open Challenge SM execution finished.
+HAL9000.-> Initializing Restaurant test.
+HAL9000.-> Restaurant SM execution finished.
+HAL9000.-> Initializing Robo Nurse test.
+HAL9000.-> RoboNurse SM execution finished.

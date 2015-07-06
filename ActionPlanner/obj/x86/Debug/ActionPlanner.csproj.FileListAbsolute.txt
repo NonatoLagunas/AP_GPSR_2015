@@ -1,0 +1,78 @@
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.dll
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.xml
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.frmActionPlanner.resources
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.Properties.Resources.resources
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.csproj.GenerateResource.Cache
+Z:\RoboCup\SourceCode\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.dll
+Z:\RoboCup\SourceCode\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.xml
+Z:\RoboCup\SourceCode\ActionPlanner\ActionPlanner\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\RoboCup\SourceCode\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.frmActionPlanner.resources
+Z:\RoboCup\SourceCode\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.Properties.Resources.resources
+Z:\RoboCup\SourceCode\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.csproj.GenerateResource.Cache
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\bin\x86\Debug\ACT-PLN.exe
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\bin\x86\Debug\ACT-PLN.pdb
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x86\Debug\ACT-PLN.exe
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x86\Debug\ACT-PLN.pdb
+Z:\RoboCup\SourceCode\ActionPlanner\ActionPlanner\obj\x86\Debug\ACT-PLN.exe
+Z:\RoboCup\SourceCode\ActionPlanner\ActionPlanner\obj\x86\Debug\ACT-PLN.pdb
+Z:\RoboCup\SourceCode\ActionPlanner\ActionPlanner\bin\x86\Debug\ACT-PLN.exe
+Z:\RoboCup\SourceCode\ActionPlanner\ActionPlanner\bin\x86\Debug\ACT-PLN.pdb
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\obj\x86\Debug\ACT-PLN.exe
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\obj\x86\Debug\ACT-PLN.pdb
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\bin\x86\Debug\ACT-PLN.exe
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\bin\x86\Debug\ACT-PLN.pdb
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\bin\x86\Debug\Robotics.dll
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\bin\x86\Debug\Robotics.pdb
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\bin\x86\Debug\Robotics.xml
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\obj\x86\Debug\ActionPlanner.frmActionPlanner.resources
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\obj\x86\Debug\ActionPlanner.Properties.Resources.resources
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\obj\x86\Debug\ResGen.read.1.tlog
+Z:\RoboCup\SourceCode\Action Planner - StateMachines\ActionPlanner\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\bin\x86\Debug\ACT-PLN.exe
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\bin\x86\Debug\ACT-PLN.pdb
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.pdb
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.xml
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.frmActionPlanner.resources
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.Properties.Resources.resources
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\obj\x86\Debug\ACT-PLN.exe
+C:\Users\Nonato\PUMASatHOME\ActionPlanner\ActionPlanner\obj\x86\Debug\ACT-PLN.pdb
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\obj\x86\Debug\ACT-PLN.exe
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\obj\x86\Debug\ACT-PLN.pdb
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\bin\x86\Debug\ACT-PLN.exe
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\bin\x86\Debug\ACT-PLN.pdb
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.pdb
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.xml
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.frmActionPlanner.resources
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.Properties.Resources.resources
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\RoboCup\Desktop\ActionPlanner\ActionPlanner\obj\x86\Debug\ResGen.write.1.tlog
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\obj\x86\Debug\ACT-PLN.exe
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\obj\x86\Debug\ACT-PLN.pdb
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\bin\x86\Debug\ACT-PLN.exe
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\bin\x86\Debug\ACT-PLN.pdb
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.dll
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.pdb
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\bin\x86\Debug\Robotics.xml
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.frmActionPlanner.resources
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\obj\x86\Debug\ActionPlanner.Properties.Resources.resources
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\obj\x86\Debug\ResGen.read.1.tlog
+Z:\RoboCup\SourceCode\FinalStable\ActionPlanner\ActionPlanner\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\nonat_000\Documents\Visual Studio 2010\Projects\Action planner\ActionPlanner\obj\x86\Debug\ACT-PLN.exe
+C:\Users\nonat_000\Documents\Visual Studio 2010\Projects\Action planner\ActionPlanner\obj\x86\Debug\ACT-PLN.pdb
+C:\Users\nonat_000\Documents\Visual Studio 2010\Projects\Action planner\ActionPlanner\obj\x86\Debug\ActionPlanner.frmActionPlanner.resources
+C:\Users\nonat_000\Documents\Visual Studio 2010\Projects\Action planner\ActionPlanner\obj\x86\Debug\ActionPlanner.Properties.Resources.resources
+C:\Users\nonat_000\Documents\Visual Studio 2010\Projects\Action planner\ActionPlanner\obj\x86\Debug\ActionPlanner.csproj.GenerateResource.Cache
+Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ACT-PLN.exe
+Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ACT-PLN.pdb
+Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ActionPlanner.frmActionPlanner.resources
+Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ActionPlanner.Properties.Resources.resources
+Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ResGen.read.1.tlog
+Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ResGen.write.1.tlog

@@ -1,0 +1,9 @@
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Release\ResolveAssemblyReference.cache
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Release\ActionPlanner.frmActionPlanner.resources
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Release\ActionPlanner.Properties.Resources.resources
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Release\ResGen.read.1.tlog
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Release\ResGen.write.1.tlog
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\bin\Release\ACT-PLN.exe
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\bin\Release\ACT-PLN.pdb
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Release\ACT-PLN.exe
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Release\ACT-PLN.pdb

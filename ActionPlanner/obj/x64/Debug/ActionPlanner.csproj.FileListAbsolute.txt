@@ -1,0 +1,10 @@
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\bin\x64\Debug\ActionPlanner.exe
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\bin\x64\Debug\ActionPlanner.pdb
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\bin\x64\Debug\Robotics.dll
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\bin\x64\Debug\Robotics.xml
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x64\Debug\ActionPlanner.frmActionPlanner.resources
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x64\Debug\ActionPlanner.Properties.Resources.resources
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x64\Debug\ActionPlanner.csproj.GenerateResource.Cache
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x64\Debug\ActionPlanner.exe
+D:\Mis Documentos\Robocup@Home 2012\ActionPlanner\ActionPlanner\obj\x64\Debug\ActionPlanner.pdb

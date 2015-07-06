@@ -1,0 +1,34 @@
+
+
+20/03/2015 01:37:40 p. m.
+HAL9000.-> Not connected to BB
+HAL9000.-> No suscribed to gesture variable
+HAL9000.-> No suscribed to location variable
+HAL9000.-> No suscribed to region variable
+HAL9000.-> No suscribed to room variable
+HAL9000.-> No suscribed to reco speech variable
+HAL9000.-> SYSTEM NOT READY
+HAL9000.-> ¡¡¡¡ W O W !!!! 
+HAL9000.-> Executing Final Test
+HAL9000.-> Congratulations Dr. Chandra
+HAL9000.-> Ejecutando prueba de seguimiento
+HAL9000cmdman: Can't send command
+HAL9000.-> Subiendo mis brazos
+HAL9000cmdman: Can't send command
+!! SpGen TimeOut !!250[ms] , textToSay:[ Wait for my signal to walk. ]
+HAL9000cmdman: Can't send command
+mx= 0 atte,p= 0
+HAL9000cmdman: Can't send command
+mx= 0 atte,p= 0
+HAL9000cmdman: Can't send command
+mx= 0 atte,p= 0
+HAL9000cmdman: Can't send command
+mx= 0 atte,p= 0
+HAL9000cmdman: Can't send command
+mx= 0 atte,p= 0
+HAL9000cmdman: Can't send command
+mx= 0 atte,p= 0
+HAL9000cmdman: Can't send command
+HAL9000CmdMan: MVN_PLN_infolaser: Time out
+mx= 0 atte,p= 0
+HAL9000.-> Robocup test resumed

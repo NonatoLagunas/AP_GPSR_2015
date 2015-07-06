@@ -1,0 +1,18 @@
+
+
+26/03/2015 09:03:42 p. m.
+HAL9000.-> Not connected to BB
+HAL9000.-> No suscribed to gesture variable
+HAL9000.-> No suscribed to location variable
+HAL9000.-> No suscribed to region variable
+HAL9000.-> No suscribed to room variable
+HAL9000.-> No suscribed to reco speech variable
+HAL9000.-> SYSTEM NOT READY
+HAL9000.-> State reached InitialState
+HAL9000.-> State reached EnterArena
+Executing: SM_EnterArena
+HAL9000\WaitForDoorRoutine.-> Saying 'I am waiting ...'
+HAL9000cmdman: Can't send command
+!! SpGen TimeOut !!250[ms] , textToSay:[ I am waiting for the door to be opened ]
+HAL9000\WaitForDoorRoutine.-> Waiting for the door is opened
+HAL9000cmdman: Can't send command

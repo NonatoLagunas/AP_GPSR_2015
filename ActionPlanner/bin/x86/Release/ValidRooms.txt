@@ -1,0 +1,7 @@
+livingroom
+kitchen
+bedroom
+hallway
+deliverone
+delivertwo
+deliverthree

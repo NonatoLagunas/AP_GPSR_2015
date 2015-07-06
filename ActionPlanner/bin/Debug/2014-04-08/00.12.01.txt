@@ -1,0 +1,94 @@
+
+
+08/04/2014 12:12:01 a.m.
+Language Processor: Can't load known verbs
+HAL9000.-> Client Connected
+HAL9000CmdMan: Response Received: list_vars "alive batAlert busy connected hd_pos hf_gesture hf_skeletons modules mp_currentLocation mp_currentRegion mp_currentRoom mp_goalRegion mp_odometryPos ocl_repForcePF ready skeletons trs_Position vars" 1
+HAL9000CmdMan: Response Received: list_vars "alive batAlert busy connected hd_pos hf_gesture hf_skeletons modules mp_currentLocation mp_currentRegion mp_currentRoom mp_goalRegion mp_odometryPos ocl_repForcePF ready skeletons trs_Position vars" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN ARMS BLK REPORT-TOOL SPK-ID VISION" }{ int batAlert 0 }{ string busy "" }{ string connected "ACT-PLN ARMS BLK REPORT-TOOL SPK-ID VISION" }{ double[] hd_pos }{ string hf_gesture }{ string hf_skeletons }{ string modules "ACT-PLN ARMS BLK CLST-DJK HEAD HMN-FND INSPECTOR JOYSTICK LASERS MB-CTRL MVN-PLN OBJ-FNDT OCC-LOBE PLOTTER PRS-FND REPORT-TOOL SKELETONIZER SLAM SP-GEN SPK-ID SP-REC ST-PLN TORSO VISION" }{ string mp_currentLocation }{ string mp_currentRegion }{ string mp_currentRoom }{ string mp_goalRegion }{ double[] mp_odometryPos }{ string ocl_repForcePF }{ string ready "ARMS BLK VISION" }{ string skeletons }{ double[] trs_Position }{ string vars "string alive int batAlert string busy string connected double hd_pos string hf_gesture string hf_skeletons string modules string mp_currentLocation string mp_currentRegion string mp_currentRoom string mp_goalRegion double mp_odometryPos string ocl_repForcePF string ready string skeletons double trs_Position string vars" }" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN ARMS BLK REPORT-TOOL SPK-ID VISION" }{ int batAlert 0 }{ string busy "" }{ string connected "ACT-PLN ARMS BLK REPORT-TOOL SPK-ID VISION" }{ double[] hd_pos }{ string hf_gesture }{ string hf_skeletons }{ string modules "ACT-PLN ARMS BLK CLST-DJK HEAD HMN-FND INSPECTOR JOYSTICK LASERS MB-CTRL MVN-PLN OBJ-FNDT OCC-LOBE PLOTTER PRS-FND REPORT-TOOL SKELETONIZER SLAM SP-GEN SPK-ID SP-REC ST-PLN TORSO VISION" }{ string mp_currentLocation }{ string mp_currentRegion }{ string mp_currentRoom }{ string mp_goalRegion }{ double[] mp_odometryPos }{ string ocl_repForcePF }{ string ready "ARMS BLK VISION" }{ string skeletons }{ double[] trs_Position }{ string vars "string alive int batAlert string busy string connected double hd_pos string hf_gesture string hf_skeletons string modules string mp_currentLocation string mp_currentRegion string mp_currentRoom string mp_goalRegion double mp_odometryPos string ocl_repForcePF string ready string skeletons double trs_Position string vars" }" 1
+HAL9000CmdMan: Response Received: list_vars "alive batAlert busy connected hd_pos hf_gesture hf_skeletons modules mp_currentLocation mp_currentRegion mp_currentRoom mp_goalRegion mp_odometryPos ocl_repForcePF ready skeletons trs_Position vars" 1
+HAL9000CmdMan: Response Received: list_vars "alive batAlert busy connected hd_pos hf_gesture hf_skeletons modules mp_currentLocation mp_currentRegion mp_currentRoom mp_goalRegion mp_odometryPos ocl_repForcePF ready skeletons trs_Position vars" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN ARMS BLK REPORT-TOOL SPK-ID VISION" }{ int batAlert 0 }{ string busy "" }{ string connected "ACT-PLN ARMS BLK REPORT-TOOL SPK-ID VISION" }{ double[] hd_pos }{ string hf_gesture }{ string hf_skeletons }{ string modules "ACT-PLN ARMS BLK CLST-DJK HEAD HMN-FND INSPECTOR JOYSTICK LASERS MB-CTRL MVN-PLN OBJ-FNDT OCC-LOBE PLOTTER PRS-FND REPORT-TOOL SKELETONIZER SLAM SP-GEN SPK-ID SP-REC ST-PLN TORSO VISION" }{ string mp_currentLocation }{ string mp_currentRegion }{ string mp_currentRoom }{ string mp_goalRegion }{ double[] mp_odometryPos }{ string ocl_repForcePF }{ string ready "ARMS BLK VISION" }{ string skeletons }{ double[] trs_Position }{ string vars "string alive int batAlert string busy string connected double hd_pos string hf_gesture string hf_skeletons string modules string mp_currentLocation string mp_currentRegion string mp_currentRoom string mp_goalRegion double mp_odometryPos string ocl_repForcePF string ready string skeletons double trs_Position string vars" }" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN ARMS BLK REPORT-TOOL SPK-ID VISION" }{ int batAlert 0 }{ string busy "" }{ string connected "ACT-PLN ARMS BLK REPORT-TOOL SPK-ID VISION" }{ double[] hd_pos }{ string hf_gesture }{ string hf_skeletons }{ string modules "ACT-PLN ARMS BLK CLST-DJK HEAD HMN-FND INSPECTOR JOYSTICK LASERS MB-CTRL MVN-PLN OBJ-FNDT OCC-LOBE PLOTTER PRS-FND REPORT-TOOL SKELETONIZER SLAM SP-GEN SPK-ID SP-REC ST-PLN TORSO VISION" }{ string mp_currentLocation }{ string mp_currentRegion }{ string mp_currentRoom }{ string mp_goalRegion }{ double[] mp_odometryPos }{ string ocl_repForcePF }{ string ready "ARMS BLK VISION" }{ string skeletons }{ double[] trs_Position }{ string vars "string alive int batAlert string busy string connected double hd_pos string hf_gesture string hf_skeletons string modules string mp_currentLocation string mp_currentRegion string mp_currentRoom string mp_goalRegion double mp_odometryPos string ocl_repForcePF string ready string skeletons double trs_Position string vars" }" 1
+HAL9000CmdMan: Response Received: read_var "gesture" 0
+HAL9000CmdMan: Response Received: read_var "gesture" 0
+HAL9000CmdMan: Response Received: create_var "{ string gesture }" 1
+HAL9000CmdMan: Response Received: create_var "{ string gesture }" 1
+HAL9000CmdMan: Response Received: write_var "{ string gesture }" 1
+HAL9000CmdMan: Response Received: write_var "{ string gesture }" 1
+HAL9000CmdMan: Response Received: subscribe_var "gesture subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "gesture subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to gesture variable
+HAL9000CmdMan: Response Received: read_var "robotLocation" 0
+HAL9000CmdMan: Response Received: read_var "robotLocation" 0
+HAL9000CmdMan: Response Received: create_var "{ string robotLocation }" 1
+HAL9000CmdMan: Response Received: create_var "{ string robotLocation }" 1
+HAL9000CmdMan: Response Received: write_var "{ string robotLocation }" 1
+HAL9000CmdMan: Response Received: write_var "{ string robotLocation }" 1
+HAL9000.-> Suscribed to location variable
+HAL9000CmdMan: Response Received: read_var "robotRegion" 0
+HAL9000CmdMan: Response Received: read_var "robotRegion" 0
+HAL9000CmdMan: Response Received: create_var "{ string robotRegion }" 1
+HAL9000CmdMan: Response Received: create_var "{ string robotRegion }" 1
+HAL9000CmdMan: Response Received: write_var "{ string robotRegion }" 1
+HAL9000CmdMan: Response Received: write_var "{ string robotRegion }" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotLocation subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotLocation subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to region variable
+HAL9000CmdMan: Response Received: read_var "robotRoom" 0
+HAL9000CmdMan: Response Received: read_var "robotRoom" 0
+HAL9000CmdMan: Response Received: create_var "{ string robotRoom }" 1
+HAL9000CmdMan: Response Received: create_var "{ string robotRoom }" 1
+HAL9000CmdMan: Response Received: write_var "{ string robotRoom }" 1
+HAL9000CmdMan: Response Received: write_var "{ string robotRoom }" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotRegion subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotRegion subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to room variable
+HAL9000CmdMan: Response Received: read_var "recognizedSpeech" 0
+HAL9000CmdMan: Response Received: read_var "recognizedSpeech" 0
+HAL9000CmdMan: Response Received: create_var "{ RecognizedSpeech recognizedSpeech }" 1
+HAL9000CmdMan: Response Received: create_var "{ RecognizedSpeech recognizedSpeech }" 1
+HAL9000CmdMan: Response Received: write_var "{ RecognizedSpeech recognizedSpeech }" 1
+HAL9000CmdMan: Response Received: write_var "{ RecognizedSpeech recognizedSpeech }" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotRoom subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotRoom subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to reco speech variable
+HAL9000.-> Suscribed to skeletons.
+HAL9000CmdMan: Response Received: subscribe_var "recognizedSpeech subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "recognizedSpeech subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "hf_skeletons subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "hf_skeletons subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: read_var "mp_objforloc" 0
+HAL9000CmdMan: Response Received: read_var "mp_objforloc" 0
+HAL9000CmdMan: Response Received: create_var "{ double mp_objforloc }" 1
+HAL9000CmdMan: Response Received: create_var "{ double mp_objforloc }" 1
+HAL9000CmdMan: Response Received: write_var "{ double mp_objforloc }" 1
+HAL9000CmdMan: Response Received: write_var "{ double mp_objforloc }" 1
+HAL9000.-> Suscribed to mp_objforloc shared var
+HAL9000CmdMan: Response Received: read_var "mp_ingoodregion" 0
+HAL9000CmdMan: Response Received: read_var "mp_ingoodregion" 0
+HAL9000CmdMan: Response Received: create_var "{ int mp_ingoodregion }" 1
+HAL9000CmdMan: Response Received: create_var "{ int mp_ingoodregion }" 1
+HAL9000CmdMan: Response Received: write_var "{ int mp_ingoodregion }" 1
+HAL9000CmdMan: Response Received: write_var "{ int mp_ingoodregion }" 1
+HAL9000CmdMan: Response Received: subscribe_var "mp_objforloc subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "mp_objforloc subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to mp_ingoodregion shared var
+HAL9000CmdMan: Response Received: read_var "cell_phone" 0
+HAL9000CmdMan: Response Received: read_var "cell_phone" 0
+HAL9000CmdMan: Response Received: create_var "{ string cell_phone }" 1
+HAL9000CmdMan: Response Received: create_var "{ string cell_phone }" 1
+HAL9000CmdMan: Response Received: write_var "{ string cell_phone }" 1
+HAL9000CmdMan: Response Received: write_var "{ string cell_phone }" 1
+HAL9000CmdMan: Response Received: subscribe_var "mp_ingoodregion subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "mp_ingoodregion subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to Cellphone.
+HAL9000CmdMan: Response Received: subscribe_var "cell_phone subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "cell_phone subscribe=writeothers report=content" 1
+HAL9000.-> Known locations not loaded
+HAL9000.-> Known objects not loaded
+HAL9000.-> Known person not loaded
+HAL9000.-> Known regions not loaded
+HAL9000.-> Known rooms not loaded
+HAL9000.-> SYSTEM NOT READY

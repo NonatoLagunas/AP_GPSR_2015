@@ -1,0 +1,55 @@
+//Verb		ActionType
+
+go		go
+move		go
+navigate	go
+drive		go
+
+leave		leave
+exit		leave
+
+get		get
+take		get
+
+find		find
+identify	find
+detect		find
+recognize	find
+memorize	find
+
+introduce	introduce
+tell		introduce
+
+follow		follow
+come		follow
+
+ask		ask
+
+bring		bring
+deliver		bring
+retrieve	bring
+carry		bring
+give		bring
+
+answer		answer
+
+say		say
+
+make		make
+perform		make
+
+clean		clean
+
+stop		stop
+
+learn		learn
+
+pour		pour
+put		pour
+serve		pour
+add		pour
+
+sayhello	sayhello
+
+turn		turn
+flip		turn

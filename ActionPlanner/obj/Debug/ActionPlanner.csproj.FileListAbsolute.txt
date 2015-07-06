@@ -1,0 +1,5 @@
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Debug\ResolveAssemblyReference.cache
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Debug\ActionPlanner.frmActionPlanner.resources
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Debug\ActionPlanner.Properties.Resources.resources
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Debug\ResGen.read.1.tlog
+Z:\RoboCup2015\RoboZoo\ActionPlannerRZ\ActionPlanner\obj\Debug\ResGen.write.1.tlog
