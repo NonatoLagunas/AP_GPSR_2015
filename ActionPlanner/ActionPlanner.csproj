@@ -119,6 +119,7 @@
     <Compile Include="ComplexActions\SM_SimpleIdentifyPerson.cs" />
     <Compile Include="ComplexActions\SM_TakeObject.cs" />
     <Compile Include="ComplexActions\SM_WaitForRequest.cs" />
+    <Compile Include="HAL9000CmdMan.LANG_UND.cs" />
     <Compile Include="Gesture.cs" />
     <Compile Include="HAL9000CmdMan.ARMS.cs" />
     <Compile Include="HAL9000CmdMan.BLK.cs" />
@@ -190,6 +191,7 @@
     <Compile Include="Tests\ConfigurationFiles\GPSR_WORLD.cs" />
     <Compile Include="Tests\GPSRPrimitives\BringObject.cs" />
     <Compile Include="Tests\GPSRPrimitives\AnswerQuestion.cs" />
+    <Compile Include="Tests\GPSRPrimitives\TellPhrase.cs" />
     <Compile Include="Tests\GPSRPrimitives\NavigateTo.cs" />
     <Compile Include="Tests\StateMachines\AudioTest.cs" />
     <Compile Include="Tests\GPSRPrimitives\TakeObject.cs" />

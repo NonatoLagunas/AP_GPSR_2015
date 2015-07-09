@@ -57,6 +57,8 @@ namespace ActionPlanner
         ST_PLN_alignedge,
 
 		ERT_addlocation, ERT_addfire, ERT_addperson, ERT_buildreport,
+
+        LANG_UND_processstring,
 	}
 
 	public enum RegionType { Room, Region, Location }
@@ -248,6 +250,9 @@ namespace ActionPlanner
 			this.justinaCmdAndResp[(int)JustinaCommands.ERT_addperson] = new JustinaCmdAndResp("ert_addperson");
 			this.justinaCmdAndResp[(int)JustinaCommands.ERT_buildreport] = new JustinaCmdAndResp("ert_buildreport");
 			#endregion
+            #region Commands for LAND_UND
+            this.justinaCmdAndResp[(int)JustinaCommands.LANG_UND_processstring] = new JustinaCmdAndResp("process_string");
+            #endregion
 			
 
 			foreach (JustinaCmdAndResp jcar in this.justinaCmdAndResp)
