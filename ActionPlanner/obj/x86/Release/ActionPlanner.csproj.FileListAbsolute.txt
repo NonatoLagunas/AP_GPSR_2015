@@ -200,3 +200,11 @@ Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Release\ACT-PLN.e
 Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Release\ACT-PLN.pdb
 C:\Users\Nonato\Documents\Projects\AP_RoboZoo_2015\ActionPlanner\obj\x86\Release\ACT-PLN.exe
 C:\Users\Nonato\Documents\Projects\AP_RoboZoo_2015\ActionPlanner\obj\x86\Release\ACT-PLN.pdb
+C:\Users\Nonato\Documents\Projects\AP_GPSR_2015\ActionPlanner\obj\x86\Release\ACT-PLN.exe
+C:\Users\Nonato\Documents\Projects\AP_GPSR_2015\ActionPlanner\obj\x86\Release\ACT-PLN.pdb
+C:\Users\Nonato\Documents\Projects\AP_GPSR_2015\ActionPlanner\obj\x86\Release\ActionPlanner.csprojResolveAssemblyReference.cache
+C:\Users\Nonato\Documents\Projects\AP_GPSR_2015\ActionPlanner\obj\x86\Release\ActionPlanner.frmActionPlanner.resources
+C:\Users\Nonato\Documents\Projects\AP_GPSR_2015\ActionPlanner\obj\x86\Release\ActionPlanner.Properties.Resources.resources
+C:\Users\Nonato\Documents\Projects\AP_GPSR_2015\ActionPlanner\obj\x86\Release\ActionPlanner.csproj.GenerateResource.Cache
+C:\Users\Nonato\Documents\Projects\AP_GPSR_2015\ActionPlanner\bin\x86\Release\ACT-PLN.exe
+C:\Users\Nonato\Documents\Projects\AP_GPSR_2015\ActionPlanner\bin\x86\Release\ACT-PLN.pdb

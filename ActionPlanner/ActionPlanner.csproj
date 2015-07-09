@@ -188,7 +188,11 @@
     <Compile Include="Tests\ConfigurationFiles\Manipulation_WORLD.cs" />
     <Compile Include="Tests\ConfigurationFiles\RoboZoo_WORLD.cs" />
     <Compile Include="Tests\ConfigurationFiles\GPSR_WORLD.cs" />
+    <Compile Include="Tests\GPSRPrimitives\BringObject.cs" />
+    <Compile Include="Tests\GPSRPrimitives\AnswerQuestion.cs" />
+    <Compile Include="Tests\GPSRPrimitives\NavigateTo.cs" />
     <Compile Include="Tests\StateMachines\AudioTest.cs" />
+    <Compile Include="Tests\GPSRPrimitives\TakeObject.cs" />
     <Compile Include="Tests\StateMachines\WakeMeUp.cs" />
     <Compile Include="Tests\StateMachines\RoboNurse.cs" />
     <Compile Include="Tests\StateMachines\Restaurant.cs" />
