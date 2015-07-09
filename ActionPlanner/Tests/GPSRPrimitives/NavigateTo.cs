@@ -254,7 +254,12 @@ namespace ActionPlanner.Tests.StateMachines
                     break;
                 default:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of UNKNOWN.");
-                    navigationSucceeded = false;
+                    if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
+                        if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
+                            if (cmdMan.MVN_PLN_getclose(locationToReach, 50000))
+                                navigationSucceeded = true;
+                            else
+                                navigationSucceeded = false;
                     break;
             }
 

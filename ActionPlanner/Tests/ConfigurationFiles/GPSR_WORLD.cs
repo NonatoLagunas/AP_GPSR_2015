@@ -48,12 +48,24 @@ namespace ActionPlanner.Tests.ConfigurationFiles
         /// stores the name of the arm used to take an object
         /// </summary>
         public string ARMS_usedArm;
+        public string SPGEN_waitforcomman;
+        public string SPGEN_didyousay;
+        public string MVNPLN_entranceLocation;
+        public string MVNPLN_operatorLocation;
         public bool bringTohuman;
+        public string sentenceDequeued;
         /// <summary>
         /// Default constructor
         /// </summary>
         public GPSR_WORLD()
         {
+            //initialize SPGEN messages
+            SPGEN_waitforcomman = "Hello human! I'm waiting for a command.";
+            SPGEN_didyousay = "Did you say:";
+            //initialize MVN-PLN location
+            MVNPLN_entranceLocation = "entrancelocation";
+            MVNPLN_operatorLocation = "gpsrLoc";
+
             //initialize arms positions
             ARMS_drop = "drop";
             ARMS_navigation = "navigation";
@@ -69,14 +81,14 @@ namespace ActionPlanner.Tests.ConfigurationFiles
 
             //initialize Bring targets dictionary
             bringTargets = new Dictionary<string, string>(4);
-            bringTargets.Add("operator", "gpsr_location");
+            bringTargets.Add("operator", MVNPLN_operatorLocation);
             bringTargets.Add("livingroom", "livingroom_table");
             bringTargets.Add("kitchen", "kitchen_table");
             bringTargets.Add("john", "john_location");
 
             //initialize MVN_PLN dictionary
             mapLocation = new Dictionary<string, int>(5);
-            mapLocation.Add("gpsr_location", 0);
+            mapLocation.Add(MVNPLN_operatorLocation, 0);
             mapLocation.Add("livingroom", 1);
             mapLocation.Add("kitchen_table", 2);
             mapLocation.Add("livingroom_table", 2);
