@@ -170,6 +170,44 @@ namespace ActionPlanner.Tests.StateMachines
 
             return finalStatus;
         }
+        private bool tryNavigation(string locationToReach)
+        {
+            bool success=false;
+            if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
+            {
+                if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
+                {
+                    if (cmdMan.MVN_PLN_getclose(locationToReach, 50000))
+                        success = true;
+                }
+                else
+                    success = true;
+            }
+            else
+                success = true;
+            
+                        
+            return success;
+        }
+        private bool tryNavigationToTable(string locationToReach)
+        {
+            bool success = false;
+            if (!brain.GetCloseToTable(locationToReach, 50000))
+            {
+                if (!brain.GetCloseToTable(locationToReach, 50000))
+                {
+                    if (brain.GetCloseToTable(locationToReach, 50000))
+                        success = true;
+                }
+                else
+                    success = true;
+            }
+            else
+                success = true;
+
+
+            return success;
+        }
         #endregion
 
         #region States Methods
@@ -218,48 +256,23 @@ namespace ActionPlanner.Tests.StateMachines
             {
                 case 0:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of standby.");
-                    if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                        if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                            if(cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                                navigationSucceeded = true;
-                            else
-                                navigationSucceeded = false;
+                    navigationSucceeded = tryNavigation(locationToReach);
                     break;
                 case 1:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of room.");
-                    if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                        if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                            if(cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                                navigationSucceeded = true;
-                            else
-                                navigationSucceeded = false;
+                    navigationSucceeded = tryNavigation(locationToReach);
                     break;
                 case 2:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of table.");
-                    if(!brain.GetCloseToTable(locationToReach,50000))
-                        if (!brain.GetCloseToTable(locationToReach, 50000))
-                            if (brain.GetCloseToTable(locationToReach, 50000))
-                                navigationSucceeded = true;
-                            else
-                                navigationSucceeded = false;
+                    navigationSucceeded = tryNavigationToTable(locationToReach);
                     break;
                 case 3:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of human location.");
-                    if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                        if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                            if (cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                                navigationSucceeded = true;
-                            else
-                                navigationSucceeded = false;
+                    navigationSucceeded = tryNavigation(locationToReach);
                     break;
                 default:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of UNKNOWN.");
-                    if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                        if (!cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                            if (cmdMan.MVN_PLN_getclose(locationToReach, 50000))
-                                navigationSucceeded = true;
-                            else
-                                navigationSucceeded = false;
+                    navigationSucceeded = tryNavigation(locationToReach);
                     break;
             }
 

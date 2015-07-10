@@ -1,0 +1,82 @@
+
+
+7/10/2015 11:38:59 AM
+HAL9000.-> Client Connected
+HAL9000CmdMan: Response Received: list_vars "alive busy connected modules ready vars test_shared_var gesture robotLocation robotRegion robotRoom recognizedSpeech hf_skeletons mp_objforloc mp_ingoodregion cell_phone positionhumanfall home_sensors" 1
+HAL9000CmdMan: Response Received: list_vars "alive busy connected modules ready vars test_shared_var gesture robotLocation robotRegion robotRoom recognizedSpeech hf_skeletons mp_objforloc mp_ingoodregion cell_phone positionhumanfall home_sensors" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN BLK" }{ string busy "" }{ string connected "ACT-PLN BLK" }{ string modules "ACT-PLN ARMS BLK HEAD JOYSTICK LANG_UND LASERS MVN-PLN OBJ-FNDT SP-GEN SP-INPUT SP-REC ST-PLN" }{ string ready "BLK" }{ string vars "string alive string busy string connected string modules string ready string vars string test_shared_var string gesture string robotLocation string robotRegion string robotRoom RecognizedSpeech recognizedSpeech string hf_skeletons double mp_objforloc int mp_ingoodregion string cell_phone string positionhumanfall string home_sensors" }{ string test_shared_var }{ string gesture null  }{ string robotLocation null  }{ string robotRegion null  }{ string robotRoom null  }{ RecognizedSpeech recognizedSpeech null  }{ string hf_skeletons null  }{ double mp_objforloc 0  }{ int mp_ingoodregion 0  }{ string cell_phone null  }{ string positionhumanfall null  }{ string home_sensors null  }" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN BLK" }{ string busy "" }{ string connected "ACT-PLN BLK" }{ string modules "ACT-PLN ARMS BLK HEAD JOYSTICK LANG_UND LASERS MVN-PLN OBJ-FNDT SP-GEN SP-INPUT SP-REC ST-PLN" }{ string ready "BLK" }{ string vars "string alive string busy string connected string modules string ready string vars string test_shared_var string gesture string robotLocation string robotRegion string robotRoom RecognizedSpeech recognizedSpeech string hf_skeletons double mp_objforloc int mp_ingoodregion string cell_phone string positionhumanfall string home_sensors" }{ string test_shared_var }{ string gesture null  }{ string robotLocation null  }{ string robotRegion null  }{ string robotRoom null  }{ RecognizedSpeech recognizedSpeech null  }{ string hf_skeletons null  }{ double mp_objforloc 0  }{ int mp_ingoodregion 0  }{ string cell_phone null  }{ string positionhumanfall null  }{ string home_sensors null  }" 1
+HAL9000CmdMan: Response Received: stat_var "string alive creationTime={2015-07-10 11:38:21} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string alive creationTime={2015-07-10 11:38:21} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string busy creationTime={2015-07-10 11:38:21} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string busy creationTime={2015-07-10 11:38:21} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string connected creationTime={2015-07-10 11:38:21} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string connected creationTime={2015-07-10 11:38:21} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string modules creationTime={2015-07-10 11:38:21} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string modules creationTime={2015-07-10 11:38:21} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string ready creationTime={2015-07-10 11:38:21} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string ready creationTime={2015-07-10 11:38:21} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string vars creationTime={2015-07-10 11:38:21}" 1
+HAL9000CmdMan: Response Received: stat_var "string vars creationTime={2015-07-10 11:38:21}" 1
+HAL9000CmdMan: Response Received: stat_var "string test_shared_var creationTime={2015-07-10 11:38:21} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string test_shared_var creationTime={2015-07-10 11:38:21} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string gesture creationTime={2015-07-10 11:38:45} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string gesture creationTime={2015-07-10 11:38:45} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotLocation creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotLocation creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotRegion creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotRegion creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotRoom creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotRoom creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "RecognizedSpeech recognizedSpeech creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "RecognizedSpeech recognizedSpeech creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string hf_skeletons creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string hf_skeletons creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double mp_objforloc creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double mp_objforloc creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "int mp_ingoodregion creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "int mp_ingoodregion creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string cell_phone creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string cell_phone creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string positionhumanfall creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string positionhumanfall creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string home_sensors creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string home_sensors creationTime={2015-07-10 11:38:46} writers={*}" 1
+HAL9000CmdMan: Response Received: list_vars "alive busy connected modules ready vars test_shared_var gesture robotLocation robotRegion robotRoom recognizedSpeech hf_skeletons mp_objforloc mp_ingoodregion cell_phone positionhumanfall home_sensors" 1
+HAL9000CmdMan: Response Received: list_vars "alive busy connected modules ready vars test_shared_var gesture robotLocation robotRegion robotRoom recognizedSpeech hf_skeletons mp_objforloc mp_ingoodregion cell_phone positionhumanfall home_sensors" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN BLK" }{ string busy "" }{ string connected "ACT-PLN BLK" }{ string modules "ACT-PLN ARMS BLK HEAD JOYSTICK LANG_UND LASERS MVN-PLN OBJ-FNDT SP-GEN SP-INPUT SP-REC ST-PLN" }{ string ready "BLK" }{ string vars "string alive string busy string connected string modules string ready string vars string test_shared_var string gesture string robotLocation string robotRegion string robotRoom RecognizedSpeech recognizedSpeech string hf_skeletons double mp_objforloc int mp_ingoodregion string cell_phone string positionhumanfall string home_sensors" }{ string test_shared_var }{ string gesture null  }{ string robotLocation null  }{ string robotRegion null  }{ string robotRoom null  }{ RecognizedSpeech recognizedSpeech null  }{ string hf_skeletons null  }{ double mp_objforloc 0  }{ int mp_ingoodregion 0  }{ string cell_phone null  }{ string positionhumanfall null  }{ string home_sensors null  }" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN BLK" }{ string busy "" }{ string connected "ACT-PLN BLK" }{ string modules "ACT-PLN ARMS BLK HEAD JOYSTICK LANG_UND LASERS MVN-PLN OBJ-FNDT SP-GEN SP-INPUT SP-REC ST-PLN" }{ string ready "BLK" }{ string vars "string alive string busy string connected string modules string ready string vars string test_shared_var string gesture string robotLocation string robotRegion string robotRoom RecognizedSpeech recognizedSpeech string hf_skeletons double mp_objforloc int mp_ingoodregion string cell_phone string positionhumanfall string home_sensors" }{ string test_shared_var }{ string gesture null  }{ string robotLocation null  }{ string robotRegion null  }{ string robotRoom null  }{ RecognizedSpeech recognizedSpeech null  }{ string hf_skeletons null  }{ double mp_objforloc 0  }{ int mp_ingoodregion 0  }{ string cell_phone null  }{ string positionhumanfall null  }{ string home_sensors null  }" 1
+HAL9000CmdMan: Response Received: subscribe_var "gesture subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "gesture subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to gesture variable
+HAL9000.-> Suscribed to location variable
+HAL9000CmdMan: Response Received: subscribe_var "robotLocation subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotLocation subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotRegion subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotRegion subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to region variable
+HAL9000.-> Suscribed to room variable
+HAL9000.-> Suscribed to reco speech variable
+HAL9000.-> Suscribed to skeletons.
+HAL9000CmdMan: Response Received: subscribe_var "robotRoom subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotRoom subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "recognizedSpeech subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "recognizedSpeech subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "hf_skeletons subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "hf_skeletons subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "mp_objforloc subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "mp_objforloc subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to mp_objforloc shared var
+HAL9000.-> Suscribed to mp_ingoodregion shared var
+HAL9000.-> Suscribed to Cellphone.
+HAL9000.-> Suscribed to Fall variable.
+HAL9000 -> Subscibed to Home Sensors variable.
+HAL9000CmdMan: Response Received: subscribe_var "mp_ingoodregion subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "mp_ingoodregion subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "cell_phone subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "cell_phone subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "positionhumanfall subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "positionhumanfall subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "home_sensors subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "home_sensors subscribe=writeothers report=content" 1
+HAL9000.-> SYSTEM READY
