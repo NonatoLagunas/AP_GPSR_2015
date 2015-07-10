@@ -1,0 +1,12 @@
+
+
+6/8/2012 4:13:41 PM
+HAL9000.-> Client Connected
+HAL9000.-> Client Disconnected
+HAL9000.-> Not connected to BB
+HAL9000.-> No suscribed to gesture variable
+HAL9000.-> No suscribed to location variable
+HAL9000.-> No suscribed to region variable
+HAL9000.-> No suscribed to room variable
+HAL9000.-> SYSTEM NOT READY
+HAL9000.-> Shared Vars Loading Error: No response from blackboard while requesting variable list (timeout?)

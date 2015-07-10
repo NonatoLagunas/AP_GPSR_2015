@@ -76,3 +76,12 @@ Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ActionPlann
 Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ActionPlanner.Properties.Resources.resources
 Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ResGen.read.1.tlog
 Z:\RoboCup2015\RoboZoo\AP_RoboZoo_RC2015\ActionPlanner\obj\x86\Debug\ResGen.write.1.tlog
+Z:\RoboCup2015\GPSR PlanZ\AP_GPSR_2015\ActionPlanner\obj\x86\Debug\ACT-PLN.exe
+Z:\RoboCup2015\GPSR PlanZ\AP_GPSR_2015\ActionPlanner\obj\x86\Debug\ACT-PLN.pdb
+Z:\RoboCup2015\GPSR PlanZ\AP_GPSR_2015\ActionPlanner\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\RoboCup2015\GPSR PlanZ\AP_GPSR_2015\ActionPlanner\obj\x86\Debug\ActionPlanner.frmActionPlanner.resources
+Z:\RoboCup2015\GPSR PlanZ\AP_GPSR_2015\ActionPlanner\obj\x86\Debug\ActionPlanner.Properties.Resources.resources
+Z:\RoboCup2015\GPSR PlanZ\AP_GPSR_2015\ActionPlanner\obj\x86\Debug\ResGen.read.1.tlog
+Z:\RoboCup2015\GPSR PlanZ\AP_GPSR_2015\ActionPlanner\obj\x86\Debug\ResGen.write.1.tlog
+Z:\RoboCup2015\GPSR PlanZ\AP_GPSR_2015\ActionPlanner\bin\x86\Debug\ACT-PLN.exe
+Z:\RoboCup2015\GPSR PlanZ\AP_GPSR_2015\ActionPlanner\bin\x86\Debug\ACT-PLN.pdb

@@ -23,17 +23,9 @@ namespace ActionPlanner.Tests.StateMachines
             /// </summary>
             InitialState,
             /// <summary>
-            /// navigate to the location of the target
-            /// </summary>
-            NavigateToTarget,
-            /// <summary>
             /// Deliver the object in hand 
             /// </summary>
             DeliverObject,
-            /// <summary>
-            /// Found a person
-            /// </summary>
-            FoundPersonInRoom,
             /// <summary>
             ///  Final state of this SM
             /// </summary>
@@ -116,9 +108,7 @@ namespace ActionPlanner.Tests.StateMachines
             SM = new FunctionBasedStateMachine();
             SM.AddState(new FunctionState((int)States.InitialState, InitialState));
             
-            SM.AddState(new FunctionState((int)States.NavigateToTarget, NavigateToTarget));
             SM.AddState(new FunctionState((int)States.DeliverObject, DeliverObject));
-            SM.AddState(new FunctionState((int)States.FoundPersonInRoom, FoundPersonInRoom));
 
             SM.AddState(new FunctionState((int)States.FinalState, FinalState, true));
 
