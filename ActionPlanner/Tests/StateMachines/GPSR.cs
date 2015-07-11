@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
+using System.IO;
+using System.Diagnostics;
 using Robotics.StateMachines;
 using Robotics.Controls;
 using ActionPlanner.ComplexActions;
@@ -152,6 +154,36 @@ namespace ActionPlanner.Tests.StateMachines
             TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> GPSR SM execution finished.");
             return this.finalStatus;
         }
+        private string process_string(string cmd, string sentence)
+        {
+            //create a file to save the sentence to process
+            StreamWriter sw = new StreamWriter(SMConfiguration.sentenceFilePath);
+            sw.Write(sentence); // write this program to a file
+            sw.Close();
+
+            string result="";
+            //configure the python program to execute
+            System.Diagnostics.ProcessStartInfo start = new System.Diagnostics.ProcessStartInfo();
+            start.FileName = SMConfiguration.pythonPath; //the python path
+            start.Arguments = string.Format("{0} {1}", cmd, SMConfiguration.sentenceFilePath);//the python code and the arguments
+            start.UseShellExecute = false;
+            start.RedirectStandardOutput = true; 
+            using (System.Diagnostics.Process process = System.Diagnostics.Process.Start(start))//execute the program
+            {
+                using (System.IO.StreamReader reader = process.StandardOutput)
+                {
+                    result = reader.ReadToEnd();//read the output
+                }
+            }
+            //stores the result in a LOG file 
+            StreamWriter swlog = new StreamWriter(SMConfiguration.LOGFilePath);
+            swlog.Write(result); // write this program to a file
+            swlog.Close();
+
+            //split the result (separate by line ends)
+
+            return result;
+        }
         #endregion
 
         #region States Methods
@@ -166,7 +198,8 @@ namespace ActionPlanner.Tests.StateMachines
             SMConfiguration = new GPSR_WORLD();
 
             // TODO: Change the next status
-            return (int)States.EnterArena;
+            //return (int)States.EnterArena;
+            return (int)States.ParseCommand;
         }
         /// <summary>
         /// the robot enters to the arena (to an especificated MVN-PLN map location)
@@ -262,7 +295,11 @@ namespace ActionPlanner.Tests.StateMachines
         private int ParseCommand(int currentState, object o)
         {
             TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> ParseCommand state reached.");
-            if (cmdMan.process_string(SMConfiguration.sentenceToParse, out SMConfiguration.setOfActions, 5000))
+
+            string parsed = process_string(SMConfiguration.commandPath, "look for a person in the living room and speak the time");
+            return (int)States.FinalState;
+
+            /*if (cmdMan.process_string(SMConfiguration.sentenceToParse, out SMConfiguration.setOfActions, 5000))
             {
                 //the string was succesfully parsed
                 return (int)States.PerformCommand;
@@ -272,7 +309,7 @@ namespace ActionPlanner.Tests.StateMachines
                 //the string was not parsed
                 cmdMan.SPG_GEN_say(SMConfiguration.SPGEN_sentenceNotParsed, 5000);
                 return (int)States.LeaveArena;
-            }
+            }*/
         }
         /// <summary>
         /// Executes all the primitives SM in order to perform the entire task

@@ -59,11 +59,19 @@ namespace ActionPlanner.Tests.ConfigurationFiles
         public bool bringTohuman;
         public string sentenceToParse;
         public string[] setOfActions;
+        public string pythonPath;
+        public string commandPath;
+        public string sentenceFilePath;
+        public string LOGFilePath;
         /// <summary>
         /// Default constructor
         /// </summary>
         public GPSR_WORLD()
         {
+            pythonPath="python.exe";
+            commandPath = "C:/LANG_UND_PLANZW/test.py";
+            sentenceFilePath = "C:/LANG_UND_PLANZW/stringToProcess";
+            LOGFilePath = "C:/LANG_UND_PLANZW/LOG";
             //initialize SPGEN messages
             SPGEN_sentenceNotParsed = "I understand your command but I am not able to perform it. I'm so sorry!";
             SPGEN_leavingArena = "I'm leaving the arena.";
