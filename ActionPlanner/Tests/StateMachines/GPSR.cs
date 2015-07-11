@@ -202,7 +202,7 @@ namespace ActionPlanner.Tests.StateMachines
                 //if the robot reach the location then ask for a command
                 cmdMan.SPG_GEN_say(SMConfiguration.SPGEN_waitforcomman, 5000);
                 Thread.Sleep(1000);
-                brain.RecognizedSentences.Clear();
+                brain.recognizedSentences.Clear();
 
                 return (int)States.WaitForCommand;
             }
@@ -217,16 +217,15 @@ namespace ActionPlanner.Tests.StateMachines
         /// <returns>ConfirmComand state</returns>
         private int WaitForCommand(int currentState, object o)
         {
-            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> WaitForCommand state reached.");
 
-            if (brain.RecognizedSentences.Count > 0)
+            if (brain.recognizedSentences.Count > 0)
             {
-                SMConfiguration.sentenceDequeued = brain.RecognizedSentences.Dequeue();
+                SMConfiguration.sentenceToParse = brain.recognizedSentences.Dequeue();
 
                 cmdMan.SPG_GEN_say(SMConfiguration.SPGEN_didyousay, 2000);
-                cmdMan.SPG_GEN_say(SMConfiguration.sentenceDequeued,2000);
+                cmdMan.SPG_GEN_say(SMConfiguration.sentenceToParse, 2000);
                 Thread.Sleep(500);
-                brain.RecognizedSentences.Clear();
+                brain.recognizedSentences.Clear();
 
                 return (int)States.ConfirmComand;
             }
@@ -241,16 +240,39 @@ namespace ActionPlanner.Tests.StateMachines
         /// <returns>WaitForCommand state if the confirmation is NO, ParseCommand state if the confirmation is YES</returns>
         private int ConfirmComand(int currentState, object o)
         {
-            return (int)States.WaitForCommand;
-            //return (int)States.ParseCommand;
+            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> ConfirmComand state reached.");
+            if (!this.brain.WaitForUserConfirmation())
+            {
+                //if the confirmation was NO then the robot ask for a new command
+                cmdMan.SPG_GEN_say(SMConfiguration.SPGEN_repeatCommand, 5000);
+                Thread.Sleep(1000);
+                brain.recognizedSentences.Clear();
+                return (int)States.WaitForCommand;
+            }
+            else
+            {
+                //if the confirmation was YES then parse the response from the language understanding module
+                return (int)States.ParseCommand;
+            }
         }
         /// <summary>
         /// Get the command parsing from the language understanding module
         /// </summary>
-        /// <returns>PerformCommand state </returns>
+        /// <returns>PerformCommand state if the LANG_UND module parse correctly the sentence. LeaveArena otherwise</returns>
         private int ParseCommand(int currentState, object o)
         {
-            return (int)States.PerformCommand;
+            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> ParseCommand state reached.");
+            if (cmdMan.process_string(SMConfiguration.sentenceToParse, out SMConfiguration.setOfActions, 5000))
+            {
+                //the string was succesfully parsed
+                return (int)States.PerformCommand;
+            }
+            else
+            {
+                //the string was not parsed
+                cmdMan.SPG_GEN_say(SMConfiguration.SPGEN_sentenceNotParsed, 5000);
+                return (int)States.LeaveArena;
+            }
         }
         /// <summary>
         /// Executes all the primitives SM in order to perform the entire task
@@ -258,15 +280,94 @@ namespace ActionPlanner.Tests.StateMachines
         /// <returns>LeaveArena state</returns>
         private int PerformCommand(int currentState, object o)
         {
+            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> PerformCommand state reached.");
+            
+            //exxecute all the primitives (one by one)
+            foreach (string action in SMConfiguration.setOfActions)
+            {
+                char[] delimiters = {' '};
+                //get the parameters for each primitive
+                string[] parameters = action.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+
+                //the first parameter allways is the primitive to execute
+                if (parameters.Length > 0)
+                {
+                    switch (parameters[0])
+                    {
+                        case "answer_question":
+                            //no parameters
+                            break;
+                        case "bring_object":
+                            //1 parameter (object name)
+                            break;
+                        case "navigate_to":
+                            //1 parameter (location name/class)
+                            break;
+                        case "take_object":
+                            //1 parameter (object name)
+                            break;
+                        case "tell_phrase":
+                            //1 parameter (kind of phrase to say)
+                            break;
+                        case "find_person":
+                            //no parameters
+                            break;
+                        default:
+                            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> The primitive " + parameters[0] + " was not found.");
+                            break;
+                    }
+                }
+            }
+            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> All primitives were executed.");
+            //TODO:
+            //Descomponer las siguientes dependencias conceptuales:
+            /*
+             * # take [object] from [location] and deliver to [person]
+             *      navigate_to [location]
+             *      search_and_find [object]
+             *      navigate_to [person_location]
+             *      bring
+             * # take [object] from [location] and deliver to [me]
+             *      navigate_to [location]
+             *      search_and_find [object]
+             *      navigate_to [me]
+             *      bring
+             * # take [object] from [location1] and deliver to [location2]
+             *      navigate_to [location1]
+             *      search_and_take [object]
+             *      navigate_to [location2]
+             *      bring
+             * # go to [location] and find [person]
+             *      navigate_to [location]
+             *      find [person]
+             * # find person in [location] and talk [phrase]
+             *      navigate_to [location]
+             *      find [person]
+             *      tellphrase [phrase]
+             */
             return (int)States.LeaveArena;
         }
         /// <summary>
         /// The robot leaves the arena
         /// </summary>
         /// <returns>FinalState state to finish this state</returns>
-        private int LeaveArena(int currentState, object o) 
+        private int LeaveArena(int currentState, object o)
         {
-            return (int)States.FinalState;
+            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> LeaveArena state reached.");
+
+            cmdMan.SPG_GEN_say(SMConfiguration.SPGEN_leavingArena, 5000);
+
+            NavigateTo sm_navigation = new NavigateTo(this.brain, this.cmdMan, SMConfiguration, SMConfiguration.MVNPLN_operatorLocation);
+            NavigateTo.Status navig_status = sm_navigation.Execute();
+            if (navig_status == NavigateTo.Status.OK)
+            {
+                //if the robot reach the location then ask for a command
+                return (int)States.FinalState;
+            }
+            else
+            {
+                return (int)States.LeaveArena;
+            }
         }
         /// <summary>
         /// Final state of this SM

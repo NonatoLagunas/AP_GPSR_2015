@@ -49,22 +49,31 @@ namespace ActionPlanner.Tests.ConfigurationFiles
         /// </summary>
         public string ARMS_usedArm;
         public string SPGEN_waitforcomman;
+        public string SPGEN_repeatCommand;
         public string SPGEN_didyousay;
+        public string SPGEN_sentenceNotParsed;
+        public string SPGEN_leavingArena;     
         public string MVNPLN_entranceLocation;
         public string MVNPLN_operatorLocation;
+        public string MVNPLN_exitLocation;
         public bool bringTohuman;
-        public string sentenceDequeued;
+        public string sentenceToParse;
+        public string[] setOfActions;
         /// <summary>
         /// Default constructor
         /// </summary>
         public GPSR_WORLD()
         {
             //initialize SPGEN messages
+            SPGEN_sentenceNotParsed = "I understand your command but I am not able to perform it. I'm so sorry!";
+            SPGEN_leavingArena = "I'm leaving the arena.";
             SPGEN_waitforcomman = "Hello human! I'm waiting for a command.";
+            SPGEN_repeatCommand = "Ok. Please repeat the command.";
             SPGEN_didyousay = "Did you say:";
             //initialize MVN-PLN location
             MVNPLN_entranceLocation = "entrancelocation";
             MVNPLN_operatorLocation = "gpsrLoc";
+            MVNPLN_exitLocation = "exit";
 
             //initialize arms positions
             ARMS_drop = "drop";
@@ -84,7 +93,7 @@ namespace ActionPlanner.Tests.ConfigurationFiles
             bringTargets.Add("operator", MVNPLN_operatorLocation);
             bringTargets.Add("livingroom", "livingroom_table");
             bringTargets.Add("kitchen", "kitchen_table");
-            bringTargets.Add("john", "john_location");
+            bringTargets.Add("exit", MVNPLN_exitLocation);
 
             //initialize MVN_PLN dictionary
             mapLocation = new Dictionary<string, int>(5);
@@ -92,7 +101,7 @@ namespace ActionPlanner.Tests.ConfigurationFiles
             mapLocation.Add("livingroom", 1);
             mapLocation.Add("kitchen_table", 2);
             mapLocation.Add("livingroom_table", 2);
-            mapLocation.Add("john_location", 3);
+            mapLocation.Add(MVNPLN_exitLocation, 1);
         }
         // TODO: Create all the classs-methods you need here
         /// <summary>
@@ -113,6 +122,10 @@ namespace ActionPlanner.Tests.ConfigurationFiles
             string defaultLocation="";
             bringTargets.TryGetValue(target, out defaultLocation);
             return defaultLocation;
+        }
+        public string generateDeliverPhrase(string objectName, string personName="")
+        {
+            return "Here is your " + objectName + " " + personName;
         }
     }
 }

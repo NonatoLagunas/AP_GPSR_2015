@@ -90,7 +90,7 @@ namespace ActionPlanner.Tests.StateMachines
         /// <summary>
         /// Stores the string representation of the object to take
         /// </summary>
-        private string bringTarget;
+        private string objectName;
         private string foundPersonMessage;
         #endregion
 
@@ -101,7 +101,7 @@ namespace ActionPlanner.Tests.StateMachines
         /// <param name="brain">HAL9000Brain instance</param>
         /// <param name="cmdMan">HAL9000CmdMan instance</param>
         /// <param name="objectToTake">Name of the object to take. Default: empty string.</param>
-        public BringObject(HAL9000Brain brain, HAL9000CmdMan cmdMan, GPSR_WORLD SMConfiguration, string bringTarget="")
+        public BringObject(HAL9000Brain brain, HAL9000CmdMan cmdMan, GPSR_WORLD SMConfiguration, string objectName="")
         {
             this.brain = brain;
             this.cmdMan = cmdMan;
@@ -109,7 +109,7 @@ namespace ActionPlanner.Tests.StateMachines
             finalStatus = Status.Ready;
 
             this.SMConfiguration = SMConfiguration;
-            this.bringTarget = bringTarget;
+            this.objectName = objectName;
 
             foundPersonMessage = "Human please get close to me and take the object.";
 
@@ -156,37 +156,6 @@ namespace ActionPlanner.Tests.StateMachines
             TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Initializing BringObject primitive.");
 
             // TODO: Change the next status
-            return (int)States.NavigateToTarget;
-        }
-
-        private int NavigateToTarget(int currentState, object o)
-        {
-            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> NavigateToTarget state reached.");
-            
-            //get the location of the target
-            string targetLocation = "";
-            targetLocation = SMConfiguration.getTargetDefaultLocation(this.bringTarget);
-            //get the kind of location
-            int kindLocation = SMConfiguration.getKindLocation(targetLocation);
-
-            //navigate to the location using the navigateto primitive
-            NavigateTo navigate_primitive_sm = new NavigateTo(this.brain, this.cmdMan, SMConfiguration, targetLocation);
-            NavigateTo.Status navigate_primitive_sm_finalstatus =  navigate_primitive_sm.Execute();
-
-            if (navigate_primitive_sm_finalstatus == NavigateTo.Status.OK)
-                if(SMConfiguration.bringTohuman)
-                    return (int)States.FoundPersonInRoom;
-                else
-                    return (int)States.DeliverObject;
-            else
-                return (int)States.NavigateToTarget;
-        }
-
-        private int FoundPersonInRoom(int currentState, object o)
-        {
-            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> FoundPersonInRoom state reached.");
-            //TODO: search for a person in the room
-            cmdMan.SPG_GEN_say(foundPersonMessage, 3000);
             return (int)States.DeliverObject;
         }
 
