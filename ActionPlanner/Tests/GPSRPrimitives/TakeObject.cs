@@ -165,7 +165,7 @@ namespace ActionPlanner.Tests.StateMachines
         {
             TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> SearchAndTakeObject state reached.");
 
-            SM_SearchAndTakeObject sm = new SM_SearchAndTakeObject(this.brain, this.cmdMan, false, new string[] { this.objectToTake }, 2, false);
+            SM_SearchAndTakeObject sm = new SM_SearchAndTakeObject(this.brain, this.cmdMan, false, new string[] { this.objectToTake , ""}, 2, false);
             SM_SearchAndTakeObject.FinalStates SATO_FinalState =  sm.Execute();
             if(SATO_FinalState == SM_SearchAndTakeObject.FinalStates.OK)
             {

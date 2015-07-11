@@ -162,7 +162,7 @@ namespace ActionPlanner.ComplexActions
         {
 			this.cmdMan.ARMS_goto("standby", 8000);
 			TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Trying getclose to: " + location);
-            if (this.cmdMan.MVN_PLN_getclose(location, 300000))
+            if (this.cmdMan.MVN_PLN_getclose(location, 30000))
             {
                 this.finalState = FinalStates.OK;
                 TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Entered the arena");

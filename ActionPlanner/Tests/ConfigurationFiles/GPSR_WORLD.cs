@@ -56,6 +56,8 @@ namespace ActionPlanner.Tests.ConfigurationFiles
         public string MVNPLN_entranceLocation;
         public string MVNPLN_operatorLocation;
         public string MVNPLN_exitLocation;
+        public string MVNPLN_kitchenLocation;
+        public string MVNPLN_livingroomLocation;
         public bool bringTohuman;
         public string sentenceToParse;
         public string[] setOfActions;
@@ -69,9 +71,9 @@ namespace ActionPlanner.Tests.ConfigurationFiles
         public GPSR_WORLD()
         {
             pythonPath="python.exe";
-            commandPath = "C:/LANG_UND_PLANZW/test.py";
-            sentenceFilePath = "C:/LANG_UND_PLANZW/stringToProcess";
-            LOGFilePath = "C:/LANG_UND_PLANZW/LOG";
+            commandPath = "Z:/LANG_UND_PLANZW/cfr_parser_nobb.py";
+            sentenceFilePath = "Z:/LANG_UND_PLANZW/stringToProcess";
+            LOGFilePath = "Z:/LANG_UND_PLANZW/LOG";
             //initialize SPGEN messages
             SPGEN_sentenceNotParsed = "I understand your command but I am not able to perform it. I'm so sorry!";
             SPGEN_leavingArena = "I'm leaving the arena.";
@@ -82,11 +84,13 @@ namespace ActionPlanner.Tests.ConfigurationFiles
             MVNPLN_entranceLocation = "entrancelocation";
             MVNPLN_operatorLocation = "gpsrLoc";
             MVNPLN_exitLocation = "exit";
+            MVNPLN_kitchenLocation = "kitchen";
+            MVNPLN_livingroomLocation = "loc2";
 
             //initialize arms positions
             ARMS_drop = "drop";
-            ARMS_navigation = "navigation";
-            ARMS_navigObject = "standby";
+            ARMS_navigation = "standby";
+            ARMS_navigObject = "navigation";
             ARMS_home = "home";
             ARMS_usedArm = "";
 
@@ -96,20 +100,20 @@ namespace ActionPlanner.Tests.ConfigurationFiles
             ARMS_ArmsEnable.left = true;
             ARMS_ArmsEnable.right = true;
 
-            //initialize Bring targets dictionary
+            //initialize Bring targets dictionary PARA TRADUCIR EL PARAMETRO A PUNTO DE MOTION
             bringTargets = new Dictionary<string, string>(4);
-            bringTargets.Add("operator", MVNPLN_operatorLocation);
-            bringTargets.Add("livingroom", "livingroom_table");
-            bringTargets.Add("kitchen", "kitchen_table");
+            bringTargets.Add("me_location", MVNPLN_operatorLocation);
+            bringTargets.Add("living_room", MVNPLN_livingroomLocation);
+            bringTargets.Add("kitchen", MVNPLN_kitchenLocation);
             bringTargets.Add("exit", MVNPLN_exitLocation);
 
-            //initialize MVN_PLN dictionary
+            //initialize MVN_PLN dictionary DE QUE TIPO ES LA LOCATION
             mapLocation = new Dictionary<string, int>(5);
             mapLocation.Add(MVNPLN_operatorLocation, 0);
-            mapLocation.Add("livingroom", 1);
-            mapLocation.Add("kitchen_table", 2);
-            mapLocation.Add("livingroom_table", 2);
-            mapLocation.Add(MVNPLN_exitLocation, 1);
+            mapLocation.Add(MVNPLN_livingroomLocation, 1);
+            mapLocation.Add(MVNPLN_kitchenLocation, 1);
+            mapLocation.Add(MVNPLN_entranceLocation, 0);
+            mapLocation.Add(MVNPLN_exitLocation, 0);
         }
         // TODO: Create all the classs-methods you need here
         /// <summary>
@@ -119,9 +123,10 @@ namespace ActionPlanner.Tests.ConfigurationFiles
         /// <returns>the kind of the location (0 by d</returns>
         public int getKindLocation(string locationName)
         {
-            int kind=0;
+            int kind=-1;
 
-            mapLocation.TryGetValue(locationName, out kind);
+            if (!mapLocation.TryGetValue(locationName, out kind))
+                kind = -1;
 
             return kind;
         }

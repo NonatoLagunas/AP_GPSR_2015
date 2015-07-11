@@ -1,0 +1,539 @@
+
+
+7/11/2015 1:55:24 PM
+HAL9000.-> Client Connected
+HAL9000CmdMan: Response Received: list_vars "alive busy connected modules ready vars test_shared_var leftArmPos rightArmPos endEffectorType hd_pos textToSpeech currentVoice sen_H0508485 sen_H1009463 sen_H0900727 mp_odometryPos rmb_clustering rmb_nearobject recognizedSpeech gesture robotLocation robotRegion robotRoom hf_skeletons mp_objforloc mp_ingoodregion cell_phone positionhumanfall home_sensors" 1
+HAL9000CmdMan: Response Received: list_vars "alive busy connected modules ready vars test_shared_var leftArmPos rightArmPos endEffectorType hd_pos textToSpeech currentVoice sen_H0508485 sen_H1009463 sen_H0900727 mp_odometryPos rmb_clustering rmb_nearobject recognizedSpeech gesture robotLocation robotRegion robotRoom hf_skeletons mp_objforloc mp_ingoodregion cell_phone positionhumanfall home_sensors" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN BLK MVN-PLN SP-INPUT SP-REC" }{ string busy "" }{ string connected "ACT-PLN BLK MVN-PLN SP-INPUT SP-REC" }{ string modules "ACT-PLN ARMS BLK HEAD JOYSTICK LANG_UND LASERS MVN-PLN OBJ-FNDT SP-GEN SP-INPUT SP-REC ST-PLN" }{ string ready "BLK MVN-PLN SP-INPUT" }{ string vars "string alive string busy string connected string modules string ready string vars string test_shared_var double leftArmPos double rightArmPos string endEffectorType double hd_pos string textToSpeech string currentVoice string sen_H0508485 string sen_H1009463 string sen_H0900727 double mp_odometryPos string rmb_clustering string rmb_nearobject RecognizedSpeech recognizedSpeech string gesture string robotLocation string robotRegion string robotRoom string hf_skeletons double mp_objforloc int mp_ingoodregion string cell_phone string positionhumanfall string home_sensors" }{ string test_shared_var }{ double[] leftArmPos }{ double[] rightArmPos }{ string endEffectorType "gripper hand" }{ double[] hd_pos }{ string textToSpeech null  }{ string currentVoice null  }{ string sen_H0508485 null  }{ string sen_H1009463 "01030000d221337f7cd902c0002e4454fb21793fe095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e0950d011101e095e095e095e095e095e095e095fd00fd00fd00fd000f01110111010f01cd00cc00cb00cb00ca00c400c400c100c100c100c000c000c000c100c000c500c500c500e095e095e095e095e095fa00fa00f600f600fa00ff00e095e095e095e095f000f000ef00e900e900f60065067c067e067e067e067e067e067d067806760676067206720672066c066c066b066b066c06e095e095e095e095e095e095e095e095e095e095f20df20df20de095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095131212121212131217121e122512f812fb12fb120b130b131713e095e095e095e095e095e095e095e095e095e095e095e095e0957713771377137713e095e095e095e095e095e095b1058c054a052c051105f804ea04d004b904b1049b0489047a045f045204460436042a0415040604f603f003e603cf03c103c103b303b303e095610361037203720390039d039e03a103a403ae03af03b103b303b703b703bd03be03bf03c703cd03d003d303d903db03db03db03e803ea03ee03f403f603fc0309040a040a04100415041804200421042b042c043a043f0440044a04500453045d045e04680468046b047a047c048204890493049a049f04ab04b804bd04c704ce04d304d904e304ee04f7040305050513052d052f053a0542054a0559055b05710580058a058f05a305bb05c105d405d405d505df0508062e0642065006500667066706670667061806a6058d0583056a056a056505670565056505600554054c054c054c054305470547054105400540053c053c053b053b05340528050e050705060504050405f304f304f304f304f104f104f104f104ed04f1040005fd04fd04fd04f704f604f604f604f704f604f604f504f504ed04f504f504f504f504f504f504f604f604f604f204f104f104eb04f104f104f404f404fa04fb04fb04fb04fb0412051205200520052d052d051c0513050f0508050605f904f804f804f804f804f804f204f404f204f204f204f204f204f404f604f80403050705030507050a051c051d052c0544054405440544054405600566057f05890589057f057f0566056605590544058a038a038a038a038a038b038b038b038b038e038e03890389038e038e038e03920399039a039a039a039b039d03a103a703a703a703aa03ad03ae03ae03b703b803ba03bb03c103c103cc03cc03cd03d603d303db03de03e103ec03ee03f203f203f803fe030b040c04130417041804e095e095e095e095e095e095e095e095e095e095e095e0953f072e072e072e072707250722072207250733073d07470756076a077a077a077a077f078207e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e0952d092d092d0949095e097509e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095a30ba30b7a0b7a0b750b750b750b8e0bb70be10b000c3c0c670d730de095e095e095e095e095e095e095e095e0950b130b130b13e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095520e2d022d022d022d022d0228022802280228022b022b022d022d022d022d022c022b022b022b023302340237023a0243024b024d024d024b02450244023f023a02390239022c022902290229022d022d022d024901fa00f000f000f000eb00d000e000e000d000d600d700d700d600d700df00e600ff0003010b010301ff00d300cf00cd00cd00cf00d000d700d8000a01070234023502370237023702e101e101e1016c016c01fa00fa00fa003902430243024302470248024c024c0250025002e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095"  }{ string sen_H0900727 null  }{ double[] mp_odometryPos 3.9205639 1.3557879 -1.3108562  }{ string rmb_clustering null  }{ string rmb_nearobject null  }{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } }{ string gesture null  }{ string robotLocation null  }{ string robotRegion null  }{ string robotRoom null  }{ string hf_skeletons null  }{ double mp_objforloc 0  }{ int mp_ingoodregion 0  }{ string cell_phone null  }{ string positionhumanfall null  }{ string home_sensors null  }" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN BLK MVN-PLN SP-INPUT SP-REC" }{ string busy "" }{ string connected "ACT-PLN BLK MVN-PLN SP-INPUT SP-REC" }{ string modules "ACT-PLN ARMS BLK HEAD JOYSTICK LANG_UND LASERS MVN-PLN OBJ-FNDT SP-GEN SP-INPUT SP-REC ST-PLN" }{ string ready "BLK MVN-PLN SP-INPUT" }{ string vars "string alive string busy string connected string modules string ready string vars string test_shared_var double leftArmPos double rightArmPos string endEffectorType double hd_pos string textToSpeech string currentVoice string sen_H0508485 string sen_H1009463 string sen_H0900727 double mp_odometryPos string rmb_clustering string rmb_nearobject RecognizedSpeech recognizedSpeech string gesture string robotLocation string robotRegion string robotRoom string hf_skeletons double mp_objforloc int mp_ingoodregion string cell_phone string positionhumanfall string home_sensors" }{ string test_shared_var }{ double[] leftArmPos }{ double[] rightArmPos }{ string endEffectorType "gripper hand" }{ double[] hd_pos }{ string textToSpeech null  }{ string currentVoice null  }{ string sen_H0508485 null  }{ string sen_H1009463 "01030000d221337f7cd902c0002e4454fb21793fe095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e0950d011101e095e095e095e095e095e095e095fd00fd00fd00fd000f01110111010f01cd00cc00cb00cb00ca00c400c400c100c100c100c000c000c000c100c000c500c500c500e095e095e095e095e095fa00fa00f600f600fa00ff00e095e095e095e095f000f000ef00e900e900f60065067c067e067e067e067e067e067d067806760676067206720672066c066c066b066b066c06e095e095e095e095e095e095e095e095e095e095f20df20df20de095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095131212121212131217121e122512f812fb12fb120b130b131713e095e095e095e095e095e095e095e095e095e095e095e095e0957713771377137713e095e095e095e095e095e095b1058c054a052c051105f804ea04d004b904b1049b0489047a045f045204460436042a0415040604f603f003e603cf03c103c103b303b303e095610361037203720390039d039e03a103a403ae03af03b103b303b703b703bd03be03bf03c703cd03d003d303d903db03db03db03e803ea03ee03f403f603fc0309040a040a04100415041804200421042b042c043a043f0440044a04500453045d045e04680468046b047a047c048204890493049a049f04ab04b804bd04c704ce04d304d904e304ee04f7040305050513052d052f053a0542054a0559055b05710580058a058f05a305bb05c105d405d405d505df0508062e0642065006500667066706670667061806a6058d0583056a056a056505670565056505600554054c054c054c054305470547054105400540053c053c053b053b05340528050e050705060504050405f304f304f304f304f104f104f104f104ed04f1040005fd04fd04fd04f704f604f604f604f704f604f604f504f504ed04f504f504f504f504f504f504f604f604f604f204f104f104eb04f104f104f404f404fa04fb04fb04fb04fb0412051205200520052d052d051c0513050f0508050605f904f804f804f804f804f804f204f404f204f204f204f204f204f404f604f80403050705030507050a051c051d052c0544054405440544054405600566057f05890589057f057f0566056605590544058a038a038a038a038a038b038b038b038b038e038e03890389038e038e038e03920399039a039a039a039b039d03a103a703a703a703aa03ad03ae03ae03b703b803ba03bb03c103c103cc03cc03cd03d603d303db03de03e103ec03ee03f203f203f803fe030b040c04130417041804e095e095e095e095e095e095e095e095e095e095e095e0953f072e072e072e072707250722072207250733073d07470756076a077a077a077a077f078207e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e0952d092d092d0949095e097509e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095a30ba30b7a0b7a0b750b750b750b8e0bb70be10b000c3c0c670d730de095e095e095e095e095e095e095e095e0950b130b130b13e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095520e2d022d022d022d022d0228022802280228022b022b022d022d022d022d022c022b022b022b023302340237023a0243024b024d024d024b02450244023f023a02390239022c022902290229022d022d022d024901fa00f000f000f000eb00d000e000e000d000d600d700d700d600d700df00e600ff0003010b010301ff00d300cf00cd00cd00cf00d000d700d8000a01070234023502370237023702e101e101e1016c016c01fa00fa00fa003902430243024302470248024c024c0250025002e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095"  }{ string sen_H0900727 null  }{ double[] mp_odometryPos 3.9205639 1.3557879 -1.3108562  }{ string rmb_clustering null  }{ string rmb_nearobject null  }{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } }{ string gesture null  }{ string robotLocation null  }{ string robotRegion null  }{ string robotRoom null  }{ string hf_skeletons null  }{ double mp_objforloc 0  }{ int mp_ingoodregion 0  }{ string cell_phone null  }{ string positionhumanfall null  }{ string home_sensors null  }" 1
+HAL9000CmdMan: Response Received: stat_var "string alive creationTime={2015-07-11 12:45:36} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string alive creationTime={2015-07-11 12:45:36} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string busy creationTime={2015-07-11 12:45:36} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string busy creationTime={2015-07-11 12:45:36} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string connected creationTime={2015-07-11 12:45:36} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string connected creationTime={2015-07-11 12:45:36} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string modules creationTime={2015-07-11 12:45:36} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string modules creationTime={2015-07-11 12:45:36} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string ready creationTime={2015-07-11 12:45:36} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string ready creationTime={2015-07-11 12:45:36} writers={BLK}" 1
+HAL9000CmdMan: Response Received: stat_var "string vars creationTime={2015-07-11 12:45:36}" 1
+HAL9000CmdMan: Response Received: stat_var "string vars creationTime={2015-07-11 12:45:36}" 1
+HAL9000CmdMan: Response Received: stat_var "string test_shared_var creationTime={2015-07-11 12:45:36} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string test_shared_var creationTime={2015-07-11 12:45:36} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double[] leftArmPos creationTime={2015-07-11 12:45:44} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double[] leftArmPos creationTime={2015-07-11 12:45:44} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double[] rightArmPos creationTime={2015-07-11 12:45:44} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double[] rightArmPos creationTime={2015-07-11 12:45:44} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string endEffectorType creationTime={2015-07-11 12:45:44} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string endEffectorType creationTime={2015-07-11 12:45:44} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double[] hd_pos creationTime={2015-07-11 12:46:09} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double[] hd_pos creationTime={2015-07-11 12:46:09} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string textToSpeech creationTime={2015-07-11 12:46:14} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string textToSpeech creationTime={2015-07-11 12:46:14} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string currentVoice creationTime={2015-07-11 12:46:14} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string currentVoice creationTime={2015-07-11 12:46:14} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string sen_H0508485 creationTime={2015-07-11 12:46:24} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string sen_H0508485 creationTime={2015-07-11 12:46:24} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string sen_H1009463 creationTime={2015-07-11 12:46:24} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string sen_H1009463 creationTime={2015-07-11 12:46:24} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string sen_H0900727 creationTime={2015-07-11 12:46:24} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string sen_H0900727 creationTime={2015-07-11 12:46:24} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double[] mp_odometryPos creationTime={2015-07-11 12:46:24} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double[] mp_odometryPos creationTime={2015-07-11 12:46:24} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string rmb_clustering creationTime={2015-07-11 12:47:07} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string rmb_clustering creationTime={2015-07-11 12:47:07} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string rmb_nearobject creationTime={2015-07-11 12:47:07} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string rmb_nearobject creationTime={2015-07-11 12:47:07} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "RecognizedSpeech recognizedSpeech creationTime={2015-07-11 12:47:39} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "RecognizedSpeech recognizedSpeech creationTime={2015-07-11 12:47:39} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string gesture creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string gesture creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotLocation creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotLocation creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotRegion creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotRegion creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotRoom creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string robotRoom creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string hf_skeletons creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string hf_skeletons creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double mp_objforloc creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "double mp_objforloc creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "int mp_ingoodregion creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "int mp_ingoodregion creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string cell_phone creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string cell_phone creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string positionhumanfall creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string positionhumanfall creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string home_sensors creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: stat_var "string home_sensors creationTime={2015-07-11 12:47:58} writers={*}" 1
+HAL9000CmdMan: Response Received: list_vars "alive busy connected modules ready vars test_shared_var leftArmPos rightArmPos endEffectorType hd_pos textToSpeech currentVoice sen_H0508485 sen_H1009463 sen_H0900727 mp_odometryPos rmb_clustering rmb_nearobject recognizedSpeech gesture robotLocation robotRegion robotRoom hf_skeletons mp_objforloc mp_ingoodregion cell_phone positionhumanfall home_sensors" 1
+HAL9000CmdMan: Response Received: list_vars "alive busy connected modules ready vars test_shared_var leftArmPos rightArmPos endEffectorType hd_pos textToSpeech currentVoice sen_H0508485 sen_H1009463 sen_H0900727 mp_odometryPos rmb_clustering rmb_nearobject recognizedSpeech gesture robotLocation robotRegion robotRoom hf_skeletons mp_objforloc mp_ingoodregion cell_phone positionhumanfall home_sensors" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN BLK MVN-PLN SP-INPUT SP-REC" }{ string busy "" }{ string connected "ACT-PLN BLK MVN-PLN SP-INPUT SP-REC" }{ string modules "ACT-PLN ARMS BLK HEAD JOYSTICK LANG_UND LASERS MVN-PLN OBJ-FNDT SP-GEN SP-INPUT SP-REC ST-PLN" }{ string ready "BLK MVN-PLN SP-INPUT" }{ string vars "string alive string busy string connected string modules string ready string vars string test_shared_var double leftArmPos double rightArmPos string endEffectorType double hd_pos string textToSpeech string currentVoice string sen_H0508485 string sen_H1009463 string sen_H0900727 double mp_odometryPos string rmb_clustering string rmb_nearobject RecognizedSpeech recognizedSpeech string gesture string robotLocation string robotRegion string robotRoom string hf_skeletons double mp_objforloc int mp_ingoodregion string cell_phone string positionhumanfall string home_sensors" }{ string test_shared_var }{ double[] leftArmPos }{ double[] rightArmPos }{ string endEffectorType "gripper hand" }{ double[] hd_pos }{ string textToSpeech null  }{ string currentVoice null  }{ string sen_H0508485 null  }{ string sen_H1009463 "01030000d221337f7cd902c0002e4454fb21793fe095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e0950d011101e095e095e095e095e095e095e095fd00fd00fd00fd000f01110111010f01cd00cc00cb00cb00ca00c400c400c100c100c100c000c000c000c100c000c500c500c500e095e095e095e095e095fa00fa00f600f600fa00ff00e095e095e095e095f000f000ef00e900e900f60065067c067e067e067e067e067e067d067806760676067206720672066c066c066b066b066c06e095e095e095e095e095e095e095e095e095e095f20df20df20de095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095131212121212131217121e122512f812fb12fb120b130b131713e095e095e095e095e095e095e095e095e095e095e095e095e0957713771377137713e095e095e095e095e095e095b1058c054a052c051105f804ea04d004b904b1049b0489047a045f045204460436042a0415040604f603f003e603cf03c103c103b303b303e095610361037203720390039d039e03a103a403ae03af03b103b303b703b703bd03be03bf03c703cd03d003d303d903db03db03db03e803ea03ee03f403f603fc0309040a040a04100415041804200421042b042c043a043f0440044a04500453045d045e04680468046b047a047c048204890493049a049f04ab04b804bd04c704ce04d304d904e304ee04f7040305050513052d052f053a0542054a0559055b05710580058a058f05a305bb05c105d405d405d505df0508062e0642065006500667066706670667061806a6058d0583056a056a056505670565056505600554054c054c054c054305470547054105400540053c053c053b053b05340528050e050705060504050405f304f304f304f304f104f104f104f104ed04f1040005fd04fd04fd04f704f604f604f604f704f604f604f504f504ed04f504f504f504f504f504f504f604f604f604f204f104f104eb04f104f104f404f404fa04fb04fb04fb04fb0412051205200520052d052d051c0513050f0508050605f904f804f804f804f804f804f204f404f204f204f204f204f204f404f604f80403050705030507050a051c051d052c0544054405440544054405600566057f05890589057f057f0566056605590544058a038a038a038a038a038b038b038b038b038e038e03890389038e038e038e03920399039a039a039a039b039d03a103a703a703a703aa03ad03ae03ae03b703b803ba03bb03c103c103cc03cc03cd03d603d303db03de03e103ec03ee03f203f203f803fe030b040c04130417041804e095e095e095e095e095e095e095e095e095e095e095e0953f072e072e072e072707250722072207250733073d07470756076a077a077a077a077f078207e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e0952d092d092d0949095e097509e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095a30ba30b7a0b7a0b750b750b750b8e0bb70be10b000c3c0c670d730de095e095e095e095e095e095e095e095e0950b130b130b13e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095520e2d022d022d022d022d0228022802280228022b022b022d022d022d022d022c022b022b022b023302340237023a0243024b024d024d024b02450244023f023a02390239022c022902290229022d022d022d024901fa00f000f000f000eb00d000e000e000d000d600d700d700d600d700df00e600ff0003010b010301ff00d300cf00cd00cd00cf00d000d700d8000a01070234023502370237023702e101e101e1016c016c01fa00fa00fa003902430243024302470248024c024c0250025002e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095"  }{ string sen_H0900727 null  }{ double[] mp_odometryPos 3.9205639 1.3557879 -1.3108562  }{ string rmb_clustering null  }{ string rmb_nearobject null  }{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } }{ string gesture null  }{ string robotLocation null  }{ string robotRegion null  }{ string robotRoom null  }{ string hf_skeletons null  }{ double mp_objforloc 0  }{ int mp_ingoodregion 0  }{ string cell_phone null  }{ string positionhumanfall null  }{ string home_sensors null  }" 1
+HAL9000CmdMan: Response Received: read_vars "{ string alive "ACT-PLN BLK MVN-PLN SP-INPUT SP-REC" }{ string busy "" }{ string connected "ACT-PLN BLK MVN-PLN SP-INPUT SP-REC" }{ string modules "ACT-PLN ARMS BLK HEAD JOYSTICK LANG_UND LASERS MVN-PLN OBJ-FNDT SP-GEN SP-INPUT SP-REC ST-PLN" }{ string ready "BLK MVN-PLN SP-INPUT" }{ string vars "string alive string busy string connected string modules string ready string vars string test_shared_var double leftArmPos double rightArmPos string endEffectorType double hd_pos string textToSpeech string currentVoice string sen_H0508485 string sen_H1009463 string sen_H0900727 double mp_odometryPos string rmb_clustering string rmb_nearobject RecognizedSpeech recognizedSpeech string gesture string robotLocation string robotRegion string robotRoom string hf_skeletons double mp_objforloc int mp_ingoodregion string cell_phone string positionhumanfall string home_sensors" }{ string test_shared_var }{ double[] leftArmPos }{ double[] rightArmPos }{ string endEffectorType "gripper hand" }{ double[] hd_pos }{ string textToSpeech null  }{ string currentVoice null  }{ string sen_H0508485 null  }{ string sen_H1009463 "01030000d221337f7cd902c0002e4454fb21793fe095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e0950d011101e095e095e095e095e095e095e095fd00fd00fd00fd000f01110111010f01cd00cc00cb00cb00ca00c400c400c100c100c100c000c000c000c100c000c500c500c500e095e095e095e095e095fa00fa00f600f600fa00ff00e095e095e095e095f000f000ef00e900e900f60065067c067e067e067e067e067e067d067806760676067206720672066c066c066b066b066c06e095e095e095e095e095e095e095e095e095e095f20df20df20de095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095131212121212131217121e122512f812fb12fb120b130b131713e095e095e095e095e095e095e095e095e095e095e095e095e0957713771377137713e095e095e095e095e095e095b1058c054a052c051105f804ea04d004b904b1049b0489047a045f045204460436042a0415040604f603f003e603cf03c103c103b303b303e095610361037203720390039d039e03a103a403ae03af03b103b303b703b703bd03be03bf03c703cd03d003d303d903db03db03db03e803ea03ee03f403f603fc0309040a040a04100415041804200421042b042c043a043f0440044a04500453045d045e04680468046b047a047c048204890493049a049f04ab04b804bd04c704ce04d304d904e304ee04f7040305050513052d052f053a0542054a0559055b05710580058a058f05a305bb05c105d405d405d505df0508062e0642065006500667066706670667061806a6058d0583056a056a056505670565056505600554054c054c054c054305470547054105400540053c053c053b053b05340528050e050705060504050405f304f304f304f304f104f104f104f104ed04f1040005fd04fd04fd04f704f604f604f604f704f604f604f504f504ed04f504f504f504f504f504f504f604f604f604f204f104f104eb04f104f104f404f404fa04fb04fb04fb04fb0412051205200520052d052d051c0513050f0508050605f904f804f804f804f804f804f204f404f204f204f204f204f204f404f604f80403050705030507050a051c051d052c0544054405440544054405600566057f05890589057f057f0566056605590544058a038a038a038a038a038b038b038b038b038e038e03890389038e038e038e03920399039a039a039a039b039d03a103a703a703a703aa03ad03ae03ae03b703b803ba03bb03c103c103cc03cc03cd03d603d303db03de03e103ec03ee03f203f203f803fe030b040c04130417041804e095e095e095e095e095e095e095e095e095e095e095e0953f072e072e072e072707250722072207250733073d07470756076a077a077a077a077f078207e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e0952d092d092d0949095e097509e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095a30ba30b7a0b7a0b750b750b750b8e0bb70be10b000c3c0c670d730de095e095e095e095e095e095e095e095e0950b130b130b13e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095520e2d022d022d022d022d0228022802280228022b022b022d022d022d022d022c022b022b022b023302340237023a0243024b024d024d024b02450244023f023a02390239022c022902290229022d022d022d024901fa00f000f000f000eb00d000e000e000d000d600d700d700d600d700df00e600ff0003010b010301ff00d300cf00cd00cd00cf00d000d700d8000a01070234023502370237023702e101e101e1016c016c01fa00fa00fa003902430243024302470248024c024c0250025002e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095e095"  }{ string sen_H0900727 null  }{ double[] mp_odometryPos 3.9205639 1.3557879 -1.3108562  }{ string rmb_clustering null  }{ string rmb_nearobject null  }{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } }{ string gesture null  }{ string robotLocation null  }{ string robotRegion null  }{ string robotRoom null  }{ string hf_skeletons null  }{ double mp_objforloc 0  }{ int mp_ingoodregion 0  }{ string cell_phone null  }{ string positionhumanfall null  }{ string home_sensors null  }" 1
+HAL9000CmdMan: Response Received: subscribe_var "gesture subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "gesture subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to gesture variable
+HAL9000.-> Suscribed to location variable
+HAL9000CmdMan: Response Received: subscribe_var "robotLocation subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotLocation subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotRegion subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotRegion subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to region variable
+HAL9000.-> Suscribed to room variable
+HAL9000.-> Suscribed to reco speech variable
+HAL9000.-> Suscribed to skeletons.
+HAL9000CmdMan: Response Received: subscribe_var "robotRoom subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "robotRoom subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "recognizedSpeech subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "recognizedSpeech subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "hf_skeletons subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "hf_skeletons subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "mp_objforloc subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "mp_objforloc subscribe=writeothers report=content" 1
+HAL9000.-> Suscribed to mp_objforloc shared var
+HAL9000.-> Suscribed to mp_ingoodregion shared var
+HAL9000.-> Suscribed to Cellphone.
+HAL9000.-> Suscribed to Fall variable.
+HAL9000 -> Subscibed to Home Sensors variable.
+HAL9000.-> SYSTEM READY
+HAL9000CmdMan: Response Received: subscribe_var "mp_ingoodregion subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "mp_ingoodregion subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "cell_phone subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "cell_phone subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "positionhumanfall subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "positionhumanfall subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "home_sensors subscribe=writeothers report=content" 1
+HAL9000CmdMan: Response Received: subscribe_var "home_sensors subscribe=writeothers report=content" 1
+HAL9000.-> Initializing GPSR test.
+HAL9000.-> EnterArena state reached.
+Executing: SM_EnterArena
+HAL9000\WaitForDoorRoutine.-> Saying 'I am waiting ...'
+HAL9000CmdMan: Send command: spg_asay "I am waiting for the door to be opened"
+HAL9000CmdMan: Response Received: spg_asay "I am waiting for the door to be opened" 0
+HAL9000CmdMan: Response Received: spg_asay "I am waiting for the door to be opened" 0
+!! SpGen TimeOut !!250[ms] , textToSay:[ I am waiting for the door to be opened ]
+HAL9000\WaitForDoorRoutine.-> Waiting for the door is opened
+HAL9000CmdMan: Send command: mp_obstacle "door"
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000CmdMan: Send command: mp_obstacle "door"
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000\WaitForDoorRoutine.-> The door is open
+HAL9000CmdMan: Send command: spg_asay "I can see now that the door is open"
+HAL9000CmdMan: Response Received: spg_asay "I can see now that the door is open" 0
+HAL9000CmdMan: Response Received: spg_asay "I can see now that the door is open" 0
+!! SpGen TimeOut !!250[ms] , textToSay:[ I can see now that the door is open ]
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Trying getclose to: entrancelocation
+HAL9000CmdMan: Send command: mp_getclose "entrancelocation"
+HAL9000CmdMan: Response Received: mp_getclose "entrancelocation" 1
+HAL9000CmdMan: Response Received: mp_getclose "entrancelocation" 1
+HAL9000.-> Entered the arena
+HAL9000.-> NavigateToOperator state reached.
+HAL9000.-> Initializing NavigateTo primitive.
+HAL9000.-> RiseArms state reached.
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Navigate state reached.
+HAL9000.-> Location is kind of standby.
+HAL9000CmdMan: Send command: mp_getclose "gpsrLoc"
+HAL9000CmdMan: Response Received: mp_getclose "gpsrLoc" 1
+HAL9000CmdMan: Response Received: mp_getclose "gpsrLoc" 1
+HAL9000.-> Navigate_Succeeded state reached.
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000CmdMan: Response Received: spg_say "Hello human! I'm waiting for a command." 0
+HAL9000CmdMan: Response Received: spg_say "Hello human! I'm waiting for a command." 0
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "take the milk from the kitchen and bring it to me" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "take the milk from the kitchen and bring it to me" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000CmdMan: Response Received: spg_say "Did you say:" 0
+HAL9000CmdMan: Response Received: spg_say "Did you say:" 0
+HAL9000CmdMan: Response Received: spg_say "take the milk from the kitchen and bring it to me" 0
+HAL9000CmdMan: Response Received: spg_say "take the milk from the kitchen and bring it to me" 0
+HAL9000.-> ConfirmComand state reached.
+HAL9000\UserConfirmRoutine.-> Waiting for user confirmation
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000\UserConfirmRoutine.-> Received user confirmation "yes"
+HAL9000.-> ParseCommand state reached.
+HAL9000.-> PerformCommand state reached.
+HAL9000.-> SM to Execute: NavigateTo.
+HAL9000.-> Initializing NavigateTo primitive.
+HAL9000.-> RiseArms state reached.
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Navigate state reached.
+HAL9000.-> Location is kind of room.
+HAL9000CmdMan: Send command: mp_getclose "kitchen"
+HAL9000CmdMan: Response Received: mp_getclose "kitchen" 1
+HAL9000CmdMan: Response Received: mp_getclose "kitchen" 1
+HAL9000.-> Navigate_Succeeded state reached.
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000.-> SM to Execute: TakeObject.
+HAL9000.-> Initializing TakeObject primitive.
+HAL9000.-> SearchAndTakeObject state reached.
+Executing: SM_SearchAndTakeObject
+HAL9000CmdMan: Send command: fashionfind_object "milk"
+HAL9000CmdMan: Response Received: fashionfind_object "milk" 0
+HAL9000CmdMan: Response Received: fashionfind_object "milk" 0
+No objects were found, trying again
+HAL9000CmdMan: Send command: spg_asay "I did not find the milk. I will try again"
+HAL9000CmdMan: Response Received: spg_asay "I did not find the milk. I will try again" 0
+HAL9000CmdMan: Response Received: spg_asay "I did not find the milk. I will try again" 0
+!! SpGen TimeOut !!250[ms] , textToSay:[ I did not find the milk. I will try again ]
+HAL9000CmdMan: Send command: fashionfind_object "milk"
+HAL9000CmdMan: Response Received: fashionfind_object "milk" 0
+HAL9000CmdMan: Response Received: fashionfind_object "milk" 0
+No objects were found, trying again
+HAL9000CmdMan: Send command: spg_asay "I did not find the milk. I will try again"
+HAL9000CmdMan: Response Received: spg_asay "I did not find the milk. I will try again" 0
+HAL9000CmdMan: Response Received: spg_asay "I did not find the milk. I will try again" 0
+!! SpGen TimeOut !!250[ms] , textToSay:[ I did not find the milk. I will try again ]
+HAL9000CmdMan: Send command: fashionfind_object "milk"
+HAL9000CmdMan: Response Received: fashionfind_object "milk" 0
+HAL9000CmdMan: Response Received: fashionfind_object "milk" 0
+HAL9000CmdMan: Send command: spg_asay "I did not find the milk"
+HAL9000CmdMan: Response Received: spg_asay "I did not find the milk" 0
+HAL9000CmdMan: Response Received: spg_asay "I did not find the milk" 0
+!! SpGen TimeOut !!250[ms] , textToSay:[ I did not find the milk ]
+Requested Object NOT found, SM was not successful.
+HAL9000.-> SATO_Failed state reached.
+HAL9000CmdMan: Response Received: spg_say "I can't take the object." 0
+HAL9000CmdMan: Response Received: spg_say "I can't take the object." 0
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000.-> SM to Execute: NavigateTo.
+HAL9000.-> Initializing NavigateTo primitive.
+HAL9000.-> RiseArms state reached.
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Navigate state reached.
+HAL9000.-> Location is kind of standby.
+HAL9000CmdMan: Send command: mp_getclose "gpsrLoc"
+HAL9000CmdMan: Response Received: mp_getclose "gpsrLoc" 1
+HAL9000CmdMan: Response Received: mp_getclose "gpsrLoc" 1
+HAL9000.-> Navigate_Succeeded state reached.
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000.-> SM to Execute: Bringobject.
+HAL9000.-> Initializing BringObject primitive.
+HAL9000.-> DeliverObject state reached.
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000.-> All primitives were executed.
+HAL9000.-> LeaveArena state reached.
+HAL9000CmdMan: Response Received: spg_say "I'm leaving the arena." 0
+HAL9000CmdMan: Response Received: spg_say "I'm leaving the arena." 0
+HAL9000.-> Initializing NavigateTo primitive.
+HAL9000.-> RiseArms state reached.
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Navigate state reached.
+HAL9000.-> Location is kind of standby.
+HAL9000CmdMan: Send command: mp_getclose "exit"
+HAL9000CmdMan: Response Received: mp_getclose "exit" 1
+HAL9000CmdMan: Response Received: mp_getclose "exit" 1
+HAL9000.-> Navigate_Succeeded state reached.
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000.-> GPSR SM execution finished.
+HAL9000.-> Initializing GPSR test.
+HAL9000.-> EnterArena state reached.
+Executing: SM_EnterArena
+HAL9000\WaitForDoorRoutine.-> Saying 'I am waiting ...'
+HAL9000CmdMan: Send command: spg_asay "I am waiting for the door to be opened"
+HAL9000CmdMan: Response Received: spg_asay "I am waiting for the door to be opened" 0
+HAL9000CmdMan: Response Received: spg_asay "I am waiting for the door to be opened" 0
+!! SpGen TimeOut !!250[ms] , textToSay:[ I am waiting for the door to be opened ]
+HAL9000\WaitForDoorRoutine.-> Waiting for the door is opened
+HAL9000CmdMan: Send command: mp_obstacle "door"
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000CmdMan: Send command: mp_obstacle "door"
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000\WaitForDoorRoutine.-> The door is open
+HAL9000CmdMan: Send command: spg_asay "I can see now that the door is open"
+HAL9000CmdMan: Response Received: spg_asay "I can see now that the door is open" 0
+HAL9000CmdMan: Response Received: spg_asay "I can see now that the door is open" 0
+!! SpGen TimeOut !!250[ms] , textToSay:[ I can see now that the door is open ]
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Trying getclose to: entrancelocation
+HAL9000CmdMan: Send command: mp_getclose "entrancelocation"
+HAL9000CmdMan: Response Received: mp_getclose "entrancelocation" 1
+HAL9000CmdMan: Response Received: mp_getclose "entrancelocation" 1
+HAL9000.-> Entered the arena
+HAL9000.-> NavigateToOperator state reached.
+HAL9000.-> Initializing NavigateTo primitive.
+HAL9000.-> RiseArms state reached.
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Navigate state reached.
+HAL9000.-> Location is kind of standby.
+HAL9000CmdMan: Send command: mp_getclose "gpsrLoc"
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "find a person in the kitchen and tell your name" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "find a person in the kitchen and tell your name" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000CmdMan: Response Received: mp_getclose "gpsrLoc" 1
+HAL9000CmdMan: Response Received: mp_getclose "gpsrLoc" 1
+HAL9000.-> Navigate_Succeeded state reached.
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000CmdMan: Response Received: spg_say "Hello human! I'm waiting for a command." 0
+HAL9000CmdMan: Response Received: spg_say "Hello human! I'm waiting for a command." 0
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000CmdMan: Response Received: spg_say "Did you say:" 0
+HAL9000CmdMan: Response Received: spg_say "Did you say:" 0
+HAL9000CmdMan: Response Received: spg_say "robot yes" 0
+HAL9000CmdMan: Response Received: spg_say "robot yes" 0
+HAL9000.-> ConfirmComand state reached.
+HAL9000\UserConfirmRoutine.-> Waiting for user confirmation
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot no" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot no" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000\UserConfirmRoutine.-> Received user confirmation "no"
+HAL9000CmdMan: Response Received: spg_say "Ok. Please repeat the command." 0
+HAL9000CmdMan: Response Received: spg_say "Ok. Please repeat the command." 0
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "find a person in the kitchen and tell your name" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "find a person in the kitchen and tell your name" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000CmdMan: Response Received: spg_say "Did you say:" 0
+HAL9000CmdMan: Response Received: spg_say "Did you say:" 0
+HAL9000CmdMan: Response Received: spg_say "find a person in the kitchen and tell your name" 0
+HAL9000CmdMan: Response Received: spg_say "find a person in the kitchen and tell your name" 0
+HAL9000.-> ConfirmComand state reached.
+HAL9000\UserConfirmRoutine.-> Waiting for user confirmation
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000\UserConfirmRoutine.-> Received user confirmation "yes"
+HAL9000.-> ParseCommand state reached.
+HAL9000.-> PerformCommand state reached.
+HAL9000.-> SM to Execute: NavigateTo.
+HAL9000.-> Initializing NavigateTo primitive.
+HAL9000.-> RiseArms state reached.
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Navigate state reached.
+HAL9000.-> Location is kind of room.
+HAL9000CmdMan: Send command: mp_getclose "kitchen"
+HAL9000CmdMan: Response Received: mp_getclose "kitchen" 1
+HAL9000CmdMan: Response Received: mp_getclose "kitchen" 1
+HAL9000.-> Navigate_Succeeded state reached.
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000.-> SM to Execute: FindPerson.
+HAL9000.-> SM to Execute: TellPhrase.
+HAL9000.-> Initializing TellPhrase primitive.
+HAL9000.-> StateTellPhrase state reached.
+HAL9000CmdMan: Response Received: spg_say "Hello I'm the robot Justina" 0
+HAL9000CmdMan: Response Received: spg_say "Hello I'm the robot Justina" 0
+HAL9000.-> TellPhrase primitive execution finished.
+HAL9000.-> All primitives were executed.
+HAL9000.-> LeaveArena state reached.
+HAL9000CmdMan: Response Received: spg_say "I'm leaving the arena." 0
+HAL9000CmdMan: Response Received: spg_say "I'm leaving the arena." 0
+HAL9000.-> Initializing NavigateTo primitive.
+HAL9000.-> RiseArms state reached.
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Navigate state reached.
+HAL9000.-> Location is kind of standby.
+HAL9000CmdMan: Send command: mp_getclose "exit"
+HAL9000CmdMan: Response Received: mp_getclose "exit" 1
+HAL9000CmdMan: Response Received: mp_getclose "exit" 1
+HAL9000.-> Navigate_Succeeded state reached.
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000.-> GPSR SM execution finished.
+HAL9000.-> Initializing GPSR test.
+HAL9000.-> EnterArena state reached.
+Executing: SM_EnterArena
+HAL9000\WaitForDoorRoutine.-> Saying 'I am waiting ...'
+HAL9000CmdMan: Send command: spg_asay "I am waiting for the door to be opened"
+HAL9000CmdMan: Response Received: spg_asay "I am waiting for the door to be opened" 0
+HAL9000CmdMan: Response Received: spg_asay "I am waiting for the door to be opened" 0
+!! SpGen TimeOut !!250[ms] , textToSay:[ I am waiting for the door to be opened ]
+HAL9000\WaitForDoorRoutine.-> Waiting for the door is opened
+HAL9000CmdMan: Send command: mp_obstacle "door"
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000CmdMan: Send command: mp_obstacle "door"
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000CmdMan: Response Received: mp_obstacle "door" 0
+HAL9000\WaitForDoorRoutine.-> The door is open
+HAL9000CmdMan: Send command: spg_asay "I can see now that the door is open"
+HAL9000CmdMan: Response Received: spg_asay "I can see now that the door is open" 0
+HAL9000CmdMan: Response Received: spg_asay "I can see now that the door is open" 0
+!! SpGen TimeOut !!250[ms] , textToSay:[ I can see now that the door is open ]
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Trying getclose to: entrancelocation
+HAL9000CmdMan: Send command: mp_getclose "entrancelocation"
+HAL9000CmdMan: Response Received: mp_getclose "entrancelocation" 1
+HAL9000CmdMan: Response Received: mp_getclose "entrancelocation" 1
+HAL9000.-> Entered the arena
+HAL9000.-> NavigateToOperator state reached.
+HAL9000.-> Initializing NavigateTo primitive.
+HAL9000.-> RiseArms state reached.
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Navigate state reached.
+HAL9000.-> Location is kind of standby.
+HAL9000CmdMan: Send command: mp_getclose "gpsrLoc"
+HAL9000CmdMan: Response Received: mp_getclose "gpsrLoc" 1
+HAL9000CmdMan: Response Received: mp_getclose "gpsrLoc" 1
+HAL9000.-> Navigate_Succeeded state reached.
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000CmdMan: Response Received: spg_say "Hello human! I'm waiting for a command." 0
+HAL9000CmdMan: Response Received: spg_say "Hello human! I'm waiting for a command." 0
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "take the milk from the kitchen and deliver it to the living room" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "take the milk from the kitchen and deliver it to the living room" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000CmdMan: Response Received: spg_say "Did you say:" 0
+HAL9000CmdMan: Response Received: spg_say "Did you say:" 0
+HAL9000CmdMan: Response Received: spg_say "take the milk from the kitchen and deliver it to the living room" 0
+HAL9000CmdMan: Response Received: spg_say "take the milk from the kitchen and deliver it to the living room" 0
+HAL9000.-> ConfirmComand state reached.
+HAL9000\UserConfirmRoutine.-> Waiting for user confirmation
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot yew" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot yew" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000\UserConfirmRoutine.-> Received user confirmation "no"
+HAL9000CmdMan: Response Received: spg_say "Ok. Please repeat the command." 0
+HAL9000CmdMan: Response Received: spg_say "Ok. Please repeat the command." 0
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "take the milk from the kitchen and deliver it to the living room" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "take the milk from the kitchen and deliver it to the living room" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000CmdMan: Response Received: spg_say "Did you say:" 0
+HAL9000CmdMan: Response Received: spg_say "Did you say:" 0
+HAL9000CmdMan: Response Received: spg_say "take the milk from the kitchen and deliver it to the living room" 0
+HAL9000CmdMan: Response Received: spg_say "take the milk from the kitchen and deliver it to the living room" 0
+HAL9000.-> ConfirmComand state reached.
+HAL9000\UserConfirmRoutine.-> Waiting for user confirmation
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000.-> Reco speech shared var updated
+HAL9000CmdMan: Response Received: read_var "{ RecognizedSpeech recognizedSpeech { 1 "robot yes" 0.9999 } } SendContent % WriteOthers % SP-INPUT" 1
+HAL9000\UserConfirmRoutine.-> Received user confirmation "yes"
+HAL9000.-> ParseCommand state reached.
+HAL9000.-> PerformCommand state reached.
+HAL9000.-> SM to Execute: NavigateTo.
+HAL9000.-> Initializing NavigateTo primitive.
+HAL9000.-> RiseArms state reached.
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Send command: arms_goto "standby"
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000CmdMan: Response Received: arms_goto "standby" 0
+HAL9000.-> Navigate state reached.
+HAL9000.-> Location is kind of room.
+HAL9000CmdMan: Send command: mp_getclose "kitchen"
+HAL9000CmdMan: Response Received: mp_getclose "kitchen" 1
+HAL9000CmdMan: Response Received: mp_getclose "kitchen" 1
+HAL9000.-> Navigate_Succeeded state reached.
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000CmdMan: Response Received: spg_say "I reach the location." 0
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000.-> SM to Execute: TakeObject.
+HAL9000.-> Initializing TakeObject primitive.
+HAL9000.-> SearchAndTakeObject state reached.
+Executing: SM_SearchAndTakeObject
+HAL9000CmdMan: Send command: fashionfind_object "milk"
+HAL9000CmdMan: Response Received: fashionfind_object "milk" 0
+HAL9000CmdMan: Response Received: fashionfind_object "milk" 0
+No objects were found, trying again
+HAL9000CmdMan: Send command: spg_asay "I did not find the milk. I will try again"
+HAL9000CmdMan: Response Received: spg_asay "I did not find the milk. I will try again" 0
+HAL9000CmdMan: Response Received: spg_asay "I did not find the milk. I will try again" 0
+!! SpGen TimeOut !!250[ms] , textToSay:[ I did not find the milk. I will try again ]
+HAL9000CmdMan: Send command: fashionfind_object "milk"
+HAL9000CmdMan: Response Received:

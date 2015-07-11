@@ -155,7 +155,7 @@ namespace ActionPlanner.Tests.StateMachines
                 case "time":
                     cmdMan.SPG_GEN_say(System.DateTime.Now.ToString(), 5000);
                     break;
-                case "name":
+                case "your_name":
                     cmdMan.SPG_GEN_say("Hello I'm the robot Justina", 5000);
                     break;
                 default:

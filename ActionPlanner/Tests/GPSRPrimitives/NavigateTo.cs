@@ -251,28 +251,38 @@ namespace ActionPlanner.Tests.StateMachines
         {
             TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Navigate state reached.");
             bool navigationSucceeded=false;
+            string location = locationToReach;
+            int kindLocation=SMConfiguration.getKindLocation(location);
+            if (kindLocation==-1)
+            {
+                location = SMConfiguration.getTargetDefaultLocation(location);
+                if (location != "")
+                    kindLocation = SMConfiguration.getKindLocation(location);
+                else
+                    location = locationToReach;
+            }
             //try to get the kind of location
-            switch (SMConfiguration.getKindLocation(locationToReach))
+            switch (kindLocation)
             {
                 case 0:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of standby.");
-                    navigationSucceeded = tryNavigation(locationToReach);
+                    navigationSucceeded = tryNavigation(location);
                     break;
                 case 1:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of room.");
-                    navigationSucceeded = tryNavigation(locationToReach);
+                    navigationSucceeded = tryNavigation(location);
                     break;
                 case 2:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of table.");
-                    navigationSucceeded = tryNavigationToTable(locationToReach);
+                    navigationSucceeded = tryNavigationToTable(location);
                     break;
                 case 3:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of human location.");
-                    navigationSucceeded = tryNavigation(locationToReach);
+                    navigationSucceeded = tryNavigation(location);
                     break;
                 default:
                     TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Location is kind of UNKNOWN.");
-                    navigationSucceeded = tryNavigation(locationToReach);
+                    navigationSucceeded = tryNavigation(location);
                     break;
             }
 

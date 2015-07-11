@@ -337,7 +337,7 @@ namespace ActionPlanner.Tests.StateMachines
         {
             TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> ParseCommand state reached.");
 
-            if (process_string(SMConfiguration.commandPath, "look for a person in the living room and speak the time"))
+            if (process_string(SMConfiguration.commandPath, SMConfiguration.sentenceToParse))
             {
                 //the string was succesfully parsed
                 return (int)States.PerformCommand;
@@ -374,7 +374,8 @@ namespace ActionPlanner.Tests.StateMachines
             {
                 char[] delimiters = {' '};
                 //get the parameters for each primitive
-                string[] parameters = action.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+                string clean_action = action.Replace('\r',' ');
+                string[] parameters = clean_action.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
 
                 //the first parameter allways is the primitive to execute
                 if (parameters.Length > 0)
