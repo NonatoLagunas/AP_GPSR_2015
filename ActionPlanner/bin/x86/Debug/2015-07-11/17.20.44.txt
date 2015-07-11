@@ -1,0 +1,9 @@
+
+
+11/07/2015 05:20:44 p.m.
+HAL9000.-> Initializing GPSR test.
+HAL9000.-> ParseCommand state reached.
+HAL9000.-> PerformCommand state reached.
+HAL9000.-> The primitive try_again was not found.
+HAL9000.-> All primitives were executed.
+HAL9000.-> LeaveArena state reached.

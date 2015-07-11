@@ -105,6 +105,8 @@ namespace ActionPlanner.Tests.StateMachines
         /// Stores all the configuration variables for the "Speech Recognition & Audio Detection Test" state machine
         /// </summary>
         private GPSR_WORLD SMConfiguration;
+        private int attempCounter;
+        private int attempLimit;
         #endregion
 
         #region Constructors
@@ -118,6 +120,9 @@ namespace ActionPlanner.Tests.StateMachines
             this.brain = brain;
             this.cmdMan = cmdMan;
 
+            attempCounter = 0;
+            attempLimit = 3;
+
             finalStatus = Status.Ready;
 
             SM = new FunctionBasedStateMachine();
@@ -128,7 +133,7 @@ namespace ActionPlanner.Tests.StateMachines
             SM.AddState(new FunctionState((int)States.ConfirmComand, ConfirmComand));
             SM.AddState(new FunctionState((int)States.ParseCommand, ParseCommand));
             SM.AddState(new FunctionState((int)States.PerformCommand, PerformCommand));
-            SM.AddState(new FunctionState((int)States.PerformCommand, LeaveArena));
+            SM.AddState(new FunctionState((int)States.LeaveArena, LeaveArena));
             SM.AddState(new FunctionState((int)States.FinalState, FinalState, true));
 
             SM.SetFinalState((int)States.FinalState);
@@ -154,14 +159,14 @@ namespace ActionPlanner.Tests.StateMachines
             TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> GPSR SM execution finished.");
             return this.finalStatus;
         }
-        private string process_string(string cmd, string sentence)
+        private bool process_string(string cmd, string sentence)
         {
+            string result="";
             //create a file to save the sentence to process
             StreamWriter sw = new StreamWriter(SMConfiguration.sentenceFilePath);
             sw.Write(sentence); // write this program to a file
             sw.Close();
 
-            string result="";
             //configure the python program to execute
             System.Diagnostics.ProcessStartInfo start = new System.Diagnostics.ProcessStartInfo();
             start.FileName = SMConfiguration.pythonPath; //the python path
@@ -181,8 +186,17 @@ namespace ActionPlanner.Tests.StateMachines
             swlog.Close();
 
             //split the result (separate by line ends)
-
-            return result;
+            char[] delimiters = { '\n' };
+            string[] lines = result.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+            //get the last line (the one which have the response to Action Planner)
+            if (lines.Length > 0)
+            {
+                //split the actions (separate by pipes |)
+                SMConfiguration.setOfActions = lines[lines.Length-1].Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
+                return true;
+            }
+            else
+                return false;//the command was not executed
         }
         #endregion
 
@@ -296,13 +310,21 @@ namespace ActionPlanner.Tests.StateMachines
         {
             TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> ParseCommand state reached.");
 
-            string parsed = process_string(SMConfiguration.commandPath, "look for a person in the living room and speak the time");
-            return (int)States.FinalState;
+            if (process_string(SMConfiguration.commandPath, "look for a person in the living room and speak the time"))
+            {
+                //the string was succesfully parsed
+                return (int)States.PerformCommand;
+            }
+            else
+            {
+                cmdMan.SPG_GEN_say(SMConfiguration.SPGEN_sentenceNotParsed, 5000);
+                return (int)States.LeaveArena;
+            }
+
 
             /*if (cmdMan.process_string(SMConfiguration.sentenceToParse, out SMConfiguration.setOfActions, 5000))
             {
                 //the string was succesfully parsed
-                return (int)States.PerformCommand;
             }
             else
             {
@@ -332,22 +354,40 @@ namespace ActionPlanner.Tests.StateMachines
                     switch (parameters[0])
                     {
                         case "answer_question":
+                            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> SM to Execute: AnswerQuestion.");
                             //no parameters
+                            AnswerQuestion sm_aq = new AnswerQuestion(this.brain, this.cmdMan, this.SMConfiguration);
+                            AnswerQuestion.Status finalStatus_aq = sm_aq.Execute();
                             break;
                         case "bring_object":
+                            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> SM to Execute: Bringobject.");
                             //1 parameter (object name)
+                            BringObject sm_bo = new BringObject(this.brain, this.cmdMan, this.SMConfiguration, parameters[1]);
+                            BringObject.Status finalStatus_bo = sm_bo.Execute();
                             break;
                         case "navigate_to":
+                            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> SM to Execute: NavigateTo.");
                             //1 parameter (location name/class)
+                            NavigateTo sm_nt = new NavigateTo(this.brain, this.cmdMan, this.SMConfiguration, parameters[1]);
+                            NavigateTo.Status finalStatus_nt = sm_nt.Execute();
                             break;
                         case "take_object":
+                            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> SM to Execute: TakeObject.");
                             //1 parameter (object name)
+                            TakeObject sm_to = new TakeObject(this.brain, this.cmdMan, this.SMConfiguration, parameters[1]);
+                            TakeObject.Status finalStatus_to = sm_to.Execute();
                             break;
                         case "tell_phrase":
+                            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> SM to Execute: TellPhrase.");
                             //1 parameter (kind of phrase to say)
+                            TellPhrase sm_tp = new TellPhrase(this.brain, this.cmdMan, this.SMConfiguration, parameters[1]);
+                            TellPhrase.Status finalStatus_tp = sm_tp.Execute();
                             break;
                         case "find_person":
+                            TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> SM to Execute: FindPerson.");
                             //no parameters
+                            //FindPerson sm_fp = new FindPerson(this.brain, this.cmdMan, this.SMConfiguration);
+                            //FindPerson.Status finalStatus_fp = sm_fp.Execute();
                             break;
                         default:
                             TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> The primitive " + parameters[0] + " was not found.");

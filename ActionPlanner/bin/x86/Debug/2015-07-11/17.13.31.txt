@@ -1,0 +1,26 @@
+
+
+11/07/2015 05:13:31 p.m.
+HAL9000.-> Initializing GPSR test.
+HAL9000.-> ParseCommand state reached.
+HAL9000.-> LeaveArena state reached.
+HAL9000.-> Initializing NavigateTo primitive.
+HAL9000.-> RiseArms state reached.
+HAL9000cmdman: Can't send command
+HAL9000cmdman: Can't send command
+HAL9000.-> Not connected to BB
+HAL9000.-> No suscribed to gesture variable
+HAL9000.-> No suscribed to location variable
+HAL9000.-> No suscribed to region variable
+HAL9000.-> No suscribed to room variable
+HAL9000.-> No suscribed to reco speech variable
+HAL9000.-> SYSTEM NOT READY
+HAL9000cmdman: Can't send command
+HAL9000cmdman: Can't send command
+HAL9000cmdman: Can't send command
+HAL9000cmdman: Can't send command
+HAL9000cmdman: Can't send command
+HAL9000cmdman: Can't send command
+HAL9000cmdman: Can't send command
+HAL9000.-> TakeObject primitive execution finished.
+HAL9000.-> GPSR SM execution finished.
