@@ -165,7 +165,7 @@ namespace ActionPlanner.Tests.StateMachines
             {
                 this.brain.SayAsync("Human I can't hear you. I will trie to continue with the test.");
                 Thread.Sleep(2000);
-
+                finalStatus = Status.Failed;
                 return (int)States.FinalState;
 
             }
@@ -180,6 +180,8 @@ namespace ActionPlanner.Tests.StateMachines
                         TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Answering \"" + foundAction.DirectObject + "\"");
                         this.cmdMan.SPG_GEN_say(foundAction.DirectObject, 10000);
                         this.brain.recognizedSentences.Clear();
+
+                        finalStatus = Status.OK;
                         return (int)States.FinalState;
 
                     }

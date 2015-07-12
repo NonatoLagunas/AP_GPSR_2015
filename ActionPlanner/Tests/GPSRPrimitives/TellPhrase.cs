@@ -170,6 +170,7 @@ namespace ActionPlanner.Tests.StateMachines
         /// </summary>
         private int FinalState(int currentState, object o)
         {
+            finalStatus = Status.OK;
             return currentState;
         }
         #endregion

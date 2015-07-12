@@ -105,8 +105,8 @@ namespace ActionPlanner.Tests.StateMachines
         /// Stores all the configuration variables for the "Speech Recognition & Audio Detection Test" state machine
         /// </summary>
         private GPSR_WORLD SMConfiguration;
-        private int attempCounter;
-        private int attempLimit;
+        private int attemptCounter;
+        private int attemptLimit;
         #endregion
 
         #region Constructors
@@ -120,8 +120,8 @@ namespace ActionPlanner.Tests.StateMachines
             this.brain = brain;
             this.cmdMan = cmdMan;
 
-            attempCounter = 0;
-            attempLimit = 3;
+            attemptCounter = 0;
+            attemptLimit = 3;
 
             finalStatus = Status.Ready;
 
@@ -212,8 +212,7 @@ namespace ActionPlanner.Tests.StateMachines
             SMConfiguration = new GPSR_WORLD();
 
             // TODO: Change the next status
-            //return (int)States.EnterArena;
-            return (int)States.ParseCommand;
+            return (int)States.EnterArena;
         }
         /// <summary>
         /// the robot enters to the arena (to an especificated MVN-PLN map location)
@@ -227,11 +226,25 @@ namespace ActionPlanner.Tests.StateMachines
             SM_EnterArena.FinalStates final =  sm.Execute();
             if (final == SM_EnterArena.FinalStates.OK)
             {
+                attemptCounter = 0;
                 return (int)States.NavigateToOperator;
             }
             else
             {
-                return (int)States.EnterArena;
+                attemptCounter++;
+                //the robot cannot entered the arena
+                if (attemptCounter < attemptLimit)
+                {
+                    TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Cannot enter to the arena at attempt " + attemptCounter + ". Try again.");
+                    return (int)States.EnterArena;
+                }
+                else
+                {
+                    //reset the attempt counter
+                    TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Cannot enter to the arena. Try to continue with the test.");
+                    attemptCounter = 0;
+                    return (int)States.NavigateToOperator;
+                }
             }            
         }
         /// <summary>
@@ -251,11 +264,25 @@ namespace ActionPlanner.Tests.StateMachines
                 Thread.Sleep(1000);
                 brain.recognizedSentences.Clear();
 
+                attemptCounter = 0;
                 return (int)States.WaitForCommand;
             }
             else
             {
-                return (int)States.NavigateToOperator;
+                attemptCounter++;
+                //the robot cannot navigate to
+                if (attemptCounter < attemptLimit)
+                {
+                    TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> connot navigate to te aperator at attempt: " + attemptCounter + ". Trying again.");
+                    return (int)States.NavigateToOperator;
+                }
+                else
+                {
+                    //reset the attempt counter
+                    TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Cannot navigate to the operator. Try to continue with the test.");
+                    attemptCounter = 0;
+                    return (int)States.WaitForCommand;
+                }
             }
         }
         /// <summary>
@@ -318,6 +345,7 @@ namespace ActionPlanner.Tests.StateMachines
             else
             {
                 cmdMan.SPG_GEN_say(SMConfiguration.SPGEN_sentenceNotParsed, 5000);
+                finalStatus = Status.Failed;
                 return (int)States.LeaveArena;
             }
 
@@ -395,6 +423,7 @@ namespace ActionPlanner.Tests.StateMachines
                     }
                 }
             }
+            finalStatus = Status.OK;
             TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> All primitives were executed.");
             //TODO:
             //Descomponer las siguientes dependencias conceptuales:
@@ -434,16 +463,29 @@ namespace ActionPlanner.Tests.StateMachines
 
             cmdMan.SPG_GEN_say(SMConfiguration.SPGEN_leavingArena, 5000);
 
-            NavigateTo sm_navigation = new NavigateTo(this.brain, this.cmdMan, SMConfiguration, SMConfiguration.MVNPLN_operatorLocation);
+            NavigateTo sm_navigation = new NavigateTo(this.brain, this.cmdMan, SMConfiguration, SMConfiguration.MVNPLN_exitLocation);
             NavigateTo.Status navig_status = sm_navigation.Execute();
             if (navig_status == NavigateTo.Status.OK)
             {
-                //if the robot reach the location then ask for a command
+                attemptCounter = 0;
                 return (int)States.FinalState;
             }
             else
             {
-                return (int)States.LeaveArena;
+                attemptCounter++;
+                //the robot cannot navigate to exit
+                if (attemptCounter < attemptLimit)
+                {
+                    TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Cannot navigate to the exit at attempt: " + attemptCounter + ". Trying again.");
+                    return (int)States.LeaveArena;
+                }
+                else
+                {
+                    //reset the attempt counter
+                    TextBoxStreamWriter.DefaultLog.WriteLine("HAL9000.-> Cannot navigate to the exit. Try to continue with the test.");
+                    attemptCounter = 0;
+                    return (int)States.FinalState;
+                }
             }
         }
         /// <summary>
